@@ -110,7 +110,7 @@ Installing collected packages: sortedcontainers, boolean.py, urllib3, toml, ruff
 Successfully installed CacheControl-0.14.4 Pillow-13.0.0 boolean.py-5.0 certifi-2026.10.23 charset_normalizer-3.5.2 cyclonedx-python-lib-9.1.0 defusedxml-0.7.1 filelock-4.2.4 idna-3.20 iniconfig-2.3.1 license-expression-30.4.4 markdown-it-py-4.2.0 mdurl-0.1.2 msgpack-1.2.3 packageurl-python-0.17.6 packaging-26.3 pip-26.2.2 pip-api-0.0.35 pip-audit-2.9.0 pip-requirements-parser-32.0.1 platformdirs-4.13.5 pluggy-1.7.0 psycopg-3.3.6 psycopg-binary-3.3.6 py-serializable-2.1.0 pygments-2.21.0 pyparsing-3.3.3 pytest-9.1.1 requests-2.34.2 rich-15.0.0 ruff-0.17.1 sortedcontainers-2.4.0 toml-0.10.2 urllib3-2.8.0
 npm ci --prefix apps/web
 
-added 22 packages, and audited 23 packages in 985ms
+added 22 packages, and audited 23 packages in 753ms
 
 6 packages are looking for funding
   run `npm fund` for details
@@ -129,7 +129,7 @@ computing gzip size...
 dist/index.html                   0.63 kB │ gzip:  0.38 kB
 dist/assets/index-BrQk4hvg.css   20.11 kB │ gzip:  5.13 kB
 dist/assets/index-B7kdMRNX.js   214.84 kB │ gzip: 67.27 kB
-✓ built in 465ms
+✓ built in 442ms
 .venv/bin/ruff check src scripts tests
 All checks passed!
 .venv/bin/ruff format --check src scripts tests
@@ -143,13 +143,13 @@ Checking formatting...
 All matched files use Prettier code style!
 .venv/bin/python scripts/local.py test
 .....s.....                                                              [100%]
-10 passed, 1 skipped in 8.21s
+10 passed, 1 skipped in 8.16s
 .venv/bin/python scripts/local.py bench
 {
   "scope": "synthetic rendered PNGs, actual Tesseract OCR; confidence is uncalibrated; scripted truth-assisted review, NOT independent human review",
   "documents": 36,
   "fields_per_document": 7,
-  "ocr_seconds": 8.814523249980994,
+  "ocr_seconds": 8.797198832966387,
   "tesseract": "tesseract 5.5.0",
   "field_accuracy": {
     "document_id": 0.8611111111111112,

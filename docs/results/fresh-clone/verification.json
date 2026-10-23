@@ -1,5 +1,5 @@
 {
-  "head": "b99dc041e4c78f86a29d74e0d31e9f8ccdeeef7b",
+  "head": "a3ffec443d75ce0a6e586250dab15253820e217f",
   "passed": true,
   "commands": [
     "git clone --no-hardlinks",
@@ -39,11 +39,11 @@
     "src/docket/extract.py": "4fdf9c7fda05514dd862bf3afa4bd86c5e4f6204b6a466270fc7f93deb23b87d",
     "src/docket/llm.py": "1554f6492e1d3df19aaa1b0e4d04e3b8364b9f46af2e3c35984f4e51fc03a15c",
     "src/docket/privacy.py": "8167be6b69b0451dcc40c297b48084f9a6c67bcd275a0afa5f7300f779b1aba4",
-    "src/docket/server.py": "d4ae1ff2b2b4aa03d86660328ce7e0ad7e70a75ea3d96f4bab7ef2c3b5927b81",
+    "src/docket/server.py": "d081fe99b4e033d1419a2dcae3f50e869839379e18454edc8d5c085325a78735",
     "src/docket/store.py": "d5211bf1296c5147a868761dc5626cb8c1f215ddd5f2c6ace2abc0f4c78a273b",
     "src/docket/worker.py": "57a2fb6d20a5e8a60d2e05543a6cac7593da160231b4f941b78660f77a6c0279",
     "tests/test_core.py": "e5dbdd027b5a47cc2f34bc951f24cda59e2b772dc4a5e1fe824a1d219fdbd251",
-    "tests/test_http.py": "bb08349682b0d35c969b8b86b32a273c380f8be7ec68d4d672dd9f5ae25d5b6b",
+    "tests/test_http.py": "1c40482cdb88218e9095bcf163261c4712c1822430277313c8ac3129b1886a1e",
     "tests/test_model_http.py": "d0d0b4df8e07dbcfc6b9e3a07c4f9f9551af87e9940860f18331e718a2e5ef26",
     "tests/test_store.py": "d532232db695ee0c722f56ead8c36e873cd6940af8134d81c5136e8b8aa5ffe6"
   }

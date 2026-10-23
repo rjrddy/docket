@@ -1,0 +1,7 @@
+{
+  "http_records": 35,
+  "numeric_or_unknown_status_only": true,
+  "source_canaries_present": false,
+  "review_token_present": false,
+  "scope": "retained actual HTTP integration log including malformed pre-auth version canary; finite controls, not universal privacy certification"
+}

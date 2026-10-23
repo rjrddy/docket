@@ -13,7 +13,7 @@
 | Demonstrated caught failure | lease-clock-before-fix.log, caught-evidence-row-exposure.log, caught-ci-ocr-readiness.log, caught-http-parser-canary.log, model schema/envelope rejection and privacy/source controls | PASS |
 | ADRs / interview kit | docs/adr, INTERVIEW.md, DRILL.md | PASS |
 | Dependency scans | Core/browser and optional model scans retained | PASS locally |
-| CI including actual container/browser | [Actual Linux run](https://github.com/rjrddy/docket/actions/runs/40027341767); final exact head tracked by coordinator in DOCKET_CI_VERIFICATION.json | PASS on implementation run; final head checked separately |
+| CI including actual container/browser | [Actual Linux run](https://github.com/rjrddy/docket/actions/runs/40028135309); final exact head tracked by coordinator in DOCKET_CI_VERIFICATION.json | PASS on implementation run; final head checked separately |
 | No unmeasured claims | Generated README; zero default automation, model errors and review limitation explicit | PASS within stated measurement scope |
 
 Routine CI skips the heavyweight optional model/HTTP test requiring local weights; its actual run is retained separately. Ordinary schema/source tests always run. OCR results can vary by Tesseract/platform version, which is recorded; a CI artifact is not silently presented as the original laptop campaign.

@@ -1,21 +1,22 @@
 {"event": "ready", "status": "http://127.0.0.1:18102"}
 {"event": "http", "status": "200"}
 {"event": "http", "status": "401"}
+{"event": "http", "status": "400"}
+{"event": "http", "status": "400"}
 {"event": "http", "status": "403"}
 {"event": "http", "status": "400"}
 {"event": "http", "status": "200"}
 {"event": "http", "status": "200"}
 {"event": "http", "status": "200"}
 {"event": "http", "status": "200"}
-{"event": "http", "status": "200"}
-{"document": "doc-0001", "event": "extraction", "status": "published"}
 {"document": "doc-0000", "event": "extraction", "status": "published"}
+{"document": "doc-0001", "event": "extraction", "status": "published"}
 {"event": "http", "status": "200"}
 {"event": "http", "status": "200"}
 {"event": "http", "status": "200"}
 {"event": "http", "status": "200"}
-{"document": "doc-0002", "event": "extraction", "status": "published"}
 {"document": "doc-0003", "event": "extraction", "status": "published"}
+{"document": "doc-0002", "event": "extraction", "status": "published"}
 {"event": "http", "status": "200"}
 {"event": "http", "status": "200"}
 {"event": "http", "status": "403"}
@@ -27,8 +28,8 @@
 {"event": "http", "status": "200"}
 {"event": "http", "status": "200"}
 {"event": "http", "status": "200"}
-{"document": "doc-0004", "event": "extraction", "status": "published"}
 {"document": "doc-0005", "event": "extraction", "status": "published"}
+{"document": "doc-0004", "event": "extraction", "status": "published"}
 {"event": "http", "status": "200"}
 {"event": "http", "status": "200"}
 {"event": "http", "status": "200"}
@@ -43,5 +44,5 @@
 {"document": "doc-0008", "event": "extraction", "status": "published"}
 {"event": "ready", "status": "http://127.0.0.1:18102"}
 {"event": "http", "status": "200"}
-{"document": "doc-0010", "event": "extraction", "status": "published"}
 {"document": "doc-0009", "event": "extraction", "status": "published"}
+{"document": "doc-0010", "event": "extraction", "status": "published"}

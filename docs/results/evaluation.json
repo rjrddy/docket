@@ -2,7 +2,7 @@
   "scope": "synthetic rendered PNGs, actual Tesseract OCR; confidence is uncalibrated; scripted truth-assisted review, NOT independent human review",
   "documents": 36,
   "fields_per_document": 7,
-  "ocr_seconds": 8.40303787495941,
+  "ocr_seconds": 8.891756333992817,
   "tesseract": "tesseract 5.5.0",
   "field_accuracy": {
     "document_id": 0.8611111111111112,

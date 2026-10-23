@@ -36,7 +36,7 @@ Requirement already satisfied: markdown-it-py>=2.2.0 in ./.venv/lib/python3.13/s
 Requirement already satisfied: mdurl~=0.1 in ./.venv/lib/python3.13/site-packages (from markdown-it-py>=2.2.0->rich>=12.4->pip-audit==2.9.0->-r requirements-dev.txt (line 6)) (0.1.2)
 npm ci --prefix apps/web
 
-added 22 packages, and audited 23 packages in 903ms
+added 22 packages, and audited 23 packages in 829ms
 
 6 packages are looking for funding
   run `npm fund` for details
@@ -55,7 +55,7 @@ computing gzip size...
 dist/index.html                   0.63 kB │ gzip:  0.38 kB
 dist/assets/index-BrQk4hvg.css   20.11 kB │ gzip:  5.13 kB
 dist/assets/index-B7kdMRNX.js   214.84 kB │ gzip: 67.27 kB
-✓ built in 452ms
+✓ built in 436ms
 .venv/bin/python scripts/local.py serve
 {"event": "ready", "status": "http://127.0.0.1:18106"}
 {"event": "http", "status": "200"}
@@ -67,5 +67,5 @@ dist/assets/index-B7kdMRNX.js   214.84 kB │ gzip: 67.27 kB
 {"event": "http", "status": "200"}
 {"event": "http", "status": "200"}
 {"event": "http", "status": "200"}
-{"document": "doc-0004", "error": "processing_failed", "event": "extraction"}
 {"document": "doc-0005", "error": "processing_failed", "event": "extraction"}
+{"document": "doc-0004", "error": "processing_failed", "event": "extraction"}
