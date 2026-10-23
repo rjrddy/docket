@@ -45,6 +45,8 @@ def main() -> None:
     with tempfile.TemporaryDirectory(prefix="docket-pg-") as temp:
         base = Path(temp)
         data = ROOT / ".cache/postgres-demo" if action == "serve" else base / "data"
+        if action != "serve":
+            env["DOCKET_SOURCE_DIR"] = str(base / "sources")
         data.parent.mkdir(parents=True, exist_ok=True)
         sock = base / "socket"
         sock.mkdir()

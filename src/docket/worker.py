@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[2]
 def image_path(doc: str) -> Path:
     if not doc.startswith("doc-") or len(doc) != 8 or not doc[4:].isdigit():
         raise ValueError("invalid document identifier")
-    return ROOT / ".cache/documents" / f"{doc}.png"
+    return Path(os.getenv("DOCKET_SOURCE_DIR", ROOT / ".cache/documents")) / f"{doc}.png"
 
 
 def process_one() -> bool:
