@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/rajreddy/dev/outreach/docket/scripts/fresh_check.py", line 128, in <module>
+    main()
+    ~~~~^^
+  File "/Users/rajreddy/dev/outreach/docket/scripts/fresh_check.py", line 76, in main
+    assert hashlib.sha256(response.read()).hexdigest() == row["source_sha256"]
+                                                          ~~~^^^^^^^^^^^^^^^^^
+KeyError: 'source_sha256'
