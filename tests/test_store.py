@@ -57,7 +57,7 @@ def test_parallel_claims_revision_conflicts_and_attestation():
 
     values = fixture(row["fixture"])["truth"]
     with pytest.raises(ValueError):
-        store.review(row["id"], row["revision"], values, False, "")
+        store.review(row["id"], row["revision"], {**values, "amount": "999999.99"}, False, "")
     reviewed = store.review(
         row["id"], row["revision"], values, True, "Test image transcription, synthetic only"
     )
@@ -88,3 +88,26 @@ def test_hash_conflict_rejected():
     assert store.enqueue(meta) == store.enqueue(meta)
     with pytest.raises(ValueError):
         store.enqueue({**meta, "sha256": "changed"})
+
+
+def test_publication_clock_is_checked_after_waiting_for_row_lock():
+    import time
+
+    doc = ingest(1)
+    job = store.claim()
+    result = ocr(image_path(doc))
+    with store.connection() as lock:
+        lock.execute("SELECT document FROM jobs WHERE document=%s FOR UPDATE", (doc,))
+        lock.execute(
+            "UPDATE jobs SET expires=clock_timestamp()+interval '0.2 seconds' WHERE document=%s",
+            (doc,),
+        )
+        lock.commit()
+        lock.execute("SELECT document FROM jobs WHERE document=%s FOR UPDATE", (doc,))
+        with ThreadPoolExecutor(max_workers=1) as pool:
+            future = pool.submit(store.finish, doc, job["lease"], result)
+            time.sleep(0.5)
+            lock.commit()
+            assert future.result(timeout=5) is False, (
+                "expired worker published after a row-lock wait"
+            )

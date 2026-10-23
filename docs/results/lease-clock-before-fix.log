@@ -1,0 +1,34 @@
+.........F                                                               [100%]
+=================================== FAILURES ===================================
+_________ test_publication_clock_is_checked_after_waiting_for_row_lock _________
+
+    def test_publication_clock_is_checked_after_waiting_for_row_lock():
+        import time
+    
+        doc = ingest(1)
+        job = store.claim()
+        result = ocr(image_path(doc))
+        with store.connection() as lock:
+            lock.execute("SELECT document FROM jobs WHERE document=%s FOR UPDATE", (doc,))
+            lock.execute(
+                "UPDATE jobs SET expires=clock_timestamp()+interval '0.2 seconds' WHERE document=%s",
+                (doc,),
+            )
+            lock.commit()
+            lock.execute("SELECT document FROM jobs WHERE document=%s FOR UPDATE", (doc,))
+            with ThreadPoolExecutor(max_workers=1) as pool:
+                future = pool.submit(store.finish, doc, job["lease"], result)
+                time.sleep(0.5)
+                lock.commit()
+>               assert future.result(timeout=5) is False, (
+                    "expired worker published after a row-lock wait"
+                )
+E               AssertionError: expired worker published after a row-lock wait
+E               assert True is False
+E                +  where True = result(timeout=5)
+E                +    where result = <Future at 0x103a83460 state=finished returned bool>.result
+
+tests/test_store.py:111: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_store.py::test_publication_clock_is_checked_after_waiting_for_row_lock
+1 failed, 9 passed in 4.37s

@@ -33,8 +33,9 @@ def supported(text: str, field: str, value: str, start: int, end: int) -> bool:
         or not 0 <= start < end <= len(text)
     ):
         return False
-    return text[start:end] == value and any(
-        m.span("value") == (start, end) for m in field_matches(text, field)
+    matches = field_matches(text, field)
+    return (
+        text[start:end] == value and len(matches) == 1 and matches[0].span("value") == (start, end)
     )
 
 

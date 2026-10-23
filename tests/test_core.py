@@ -13,6 +13,7 @@ def test_citation_cannot_move_between_fields_or_change_numbers():
     text = "Document: SYN-0001\nDate: 2026-02-01\nTotal: 123.45\nAccount: DEMO710001"
     start = text.index("123.45")
     assert supported(text, "amount", "123.45", start, start + 6)
+    assert not supported(text + "\nBalance: 999.99", "amount", "123.45", start, start + 6)
     rng = random.Random(42)
     for _ in range(500):
         bad = f"{rng.randint(200, 999)}.00"
@@ -56,3 +57,16 @@ def test_actual_ocr_bounds_and_no_truth_argument(tmp_path):
             assert result["text"][value["start"] : value["end"]] == value["value"]
             assert supported(result["text"], field, value["value"], value["start"], value["end"])
     assert meta["truth"] == fixture(1)["truth"]
+
+
+def test_model_envelope_is_not_a_schema_or_source_bypass():
+    import json
+
+    from docket.llm import parse_proposal
+
+    payload = {k: "" for k in FIELDS}
+    assert parse_proposal(json.dumps(payload)) == payload
+    assert parse_proposal("```json\n" + json.dumps(payload) + "\n```") == payload
+    assert parse_proposal("Claim supported! " + json.dumps(payload)) is None
+    assert parse_proposal('{"amount":"1.00","amount":"2.00"}') is None
+    assert parse_proposal(json.dumps({**payload, "amount": 10})) is None

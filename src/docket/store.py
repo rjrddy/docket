@@ -72,15 +72,15 @@ def claim() -> dict | None:
     token = uuid.uuid4()
     with connection() as c:
         exhausted = c.execute(
-            "UPDATE jobs SET state='error',lease=NULL WHERE state='running' AND expires<now() AND attempts>=3 RETURNING document"
+            "UPDATE jobs SET state='error',lease=NULL WHERE state='running' AND expires<clock_timestamp() AND attempts>=3 RETURNING document"
         ).fetchall()
         for item in exhausted:
             c.execute("UPDATE documents SET state='error' WHERE id=%s", (item["document"],))
             audit(c, item["document"], "worker_exhausted", "worker", {"code": "attempt_budget"})
         row = c.execute(
             """WITH picked AS (SELECT document FROM jobs WHERE attempts<3 AND
-          (state='ready' OR (state='running' AND expires<now())) ORDER BY document FOR UPDATE SKIP LOCKED LIMIT 1)
-          UPDATE jobs j SET state='running',attempts=attempts+1,lease=%s,expires=now()+interval '60 seconds'
+          (state='ready' OR (state='running' AND expires<clock_timestamp())) ORDER BY document FOR UPDATE SKIP LOCKED LIMIT 1)
+          UPDATE jobs j SET state='running',attempts=attempts+1,lease=%s,expires=clock_timestamp()+interval '60 seconds'
           FROM picked WHERE j.document=picked.document RETURNING j.*""",
             (token,),
         ).fetchone()
@@ -96,7 +96,7 @@ def finish(doc: str, token, result: dict) -> bool:
             return False
         # Compare on the database clock; an expired worker cannot publish.
         if not c.execute(
-            "SELECT expires>now() AS live FROM jobs WHERE document=%s", (doc,)
+            "SELECT expires>clock_timestamp() AS live FROM jobs WHERE document=%s", (doc,)
         ).fetchone()["live"]:
             return False
         state = route(result)
@@ -135,7 +135,9 @@ def get(doc: str) -> dict:
         if not row:
             raise KeyError(doc)
         if row["result"]:
-            row["matches"] = candidates(row["result"]["fields"])
+            row["matches"] = candidates(
+                row["review"]["fields"] if row["review"] else row["result"]["fields"]
+            )
         row["audit"] = c.execute(
             "SELECT seq,event,role,detail,created FROM audit WHERE document=%s ORDER BY seq", (doc,)
         ).fetchall()
@@ -234,12 +236,12 @@ def request_payer(doc: str) -> None:
 def payer_claim() -> dict | None:
     with connection() as c:
         c.execute(
-            "UPDATE outbox SET state='error',lease=NULL WHERE state='running' AND expires<now() AND attempts>=4"
+            "UPDATE outbox SET state='error',lease=NULL WHERE state='running' AND expires<clock_timestamp() AND attempts>=4"
         )
         return c.execute(
-            """WITH p AS (SELECT document FROM outbox WHERE attempts<4 AND next_at<=now() AND
-          (state='pending' OR (state='running' AND expires<now())) ORDER BY document FOR UPDATE SKIP LOCKED LIMIT 1)
-          UPDATE outbox o SET state='running',attempts=attempts+1,lease=%s,expires=now()+interval '5 seconds'
+            """WITH p AS (SELECT document FROM outbox WHERE attempts<4 AND next_at<=clock_timestamp() AND
+          (state='pending' OR (state='running' AND expires<clock_timestamp())) ORDER BY document FOR UPDATE SKIP LOCKED LIMIT 1)
+          UPDATE outbox o SET state='running',attempts=attempts+1,lease=%s,expires=clock_timestamp()+interval '5 seconds'
           FROM p WHERE o.document=p.document RETURNING o.*""",
             (uuid.uuid4(),),
         ).fetchone()
@@ -254,7 +256,8 @@ def payer_finish(row: dict, response: dict | None) -> None:
             str(old["lease"]) != str(row["lease"])
             or old["state"] != "running"
             or not c.execute(
-                "SELECT expires>now() AS live FROM outbox WHERE document=%s", (row["document"],)
+                "SELECT expires>clock_timestamp() AS live FROM outbox WHERE document=%s",
+                (row["document"],),
             ).fetchone()["live"]
         ):
             return
