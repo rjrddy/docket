@@ -1,7 +1,7 @@
 .venv/bin/ruff check src scripts tests
 All checks passed!
 .venv/bin/ruff format --check src scripts tests
-18 files already formatted
+21 files already formatted
 npm run lint --prefix apps/web
 
 > docket-reading-room@0.1.0 lint

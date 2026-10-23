@@ -2,7 +2,7 @@
 
 synthetic rendered PNGs, actual Tesseract OCR; confidence is uncalibrated; scripted truth-assisted review, NOT independent human review
 
-tesseract 5.5.0; OCR campaign 9.450 seconds including rendering/database work; not service throughput.
+tesseract 5.5.0; OCR campaign 8.403 seconds including rendering/database work; not service throughput.
 
 | Template | n | document_id | date | amount | entity | reference | zone | domain |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|

@@ -16,16 +16,16 @@
       "end": 89
     },
     "amount": {
-      "value": "",
-      "supported": false,
-      "start": null,
-      "end": null
+      "value": "4929.02",
+      "supported": true,
+      "start": 99,
+      "end": 106
     },
     "entity": {
-      "value": "",
-      "supported": false,
-      "start": null,
-      "end": null
+      "value": "DEMO ENTITY 01",
+      "supported": true,
+      "start": 115,
+      "end": 129
     },
     "reference": {
       "value": "",
@@ -34,10 +34,10 @@
       "end": null
     },
     "zone": {
-      "value": "",
-      "supported": false,
-      "start": null,
-      "end": null
+      "value": "TESTZONE-1",
+      "supported": true,
+      "start": 156,
+      "end": 166
     },
     "domain": {
       "value": "",
@@ -46,5 +46,5 @@
       "end": null
     }
   },
-  "seconds": 5.75699175009504
+  "seconds": 6.950388791039586
 }

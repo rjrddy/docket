@@ -1,0 +1,30 @@
+{
+  "scope": "retained actual model-study inputs versus final single-thread OCR campaign",
+  "all_identical": true,
+  "rows": [
+    {
+      "id": "doc-0000",
+      "identical": true
+    },
+    {
+      "id": "doc-0001",
+      "identical": true
+    },
+    {
+      "id": "doc-0002",
+      "identical": true
+    },
+    {
+      "id": "doc-0018",
+      "identical": true
+    },
+    {
+      "id": "doc-0030",
+      "identical": true
+    },
+    {
+      "id": "doc-0035",
+      "identical": true
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 .venv/bin/ruff check src scripts tests
 All checks passed!
 .venv/bin/ruff format --check src scripts tests
-20 files already formatted
+21 files already formatted
 npm run lint --prefix apps/web
 
 > docket-reading-room@0.1.0 lint
@@ -11,13 +11,13 @@ Checking formatting...
 All matched files use Prettier code style!
 .venv/bin/python scripts/local.py test
 .....s.....                                                              [100%]
-10 passed, 1 skipped in 5.26s
+10 passed, 1 skipped in 4.63s
 .venv/bin/python scripts/local.py bench
 {
   "scope": "synthetic rendered PNGs, actual Tesseract OCR; confidence is uncalibrated; scripted truth-assisted review, NOT independent human review",
   "documents": 36,
   "fields_per_document": 7,
-  "ocr_seconds": 9.450446791946888,
+  "ocr_seconds": 8.40303787495941,
   "tesseract": "tesseract 5.5.0",
   "field_accuracy": {
     "document_id": 0.8611111111111112,

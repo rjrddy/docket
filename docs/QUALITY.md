@@ -10,10 +10,10 @@
 | Unit/integration/property/failure tests | Seeded citation mutations, Postgres lock/lease conflict, source corruption, mock timeout, process restart | PASS locally |
 | Actual OCR benchmark | evaluation.json / RESULTS.md / raw stdout | PASS |
 | Actual optional model study | model-evaluation.json, raw failures, pinned model provenance and model-http.json | PASS locally; quality limited |
-| Demonstrated caught failure | lease-clock-before-fix.log, caught-evidence-row-exposure.log, model schema/envelope rejection and privacy/source controls | PASS |
+| Demonstrated caught failure | lease-clock-before-fix.log, caught-evidence-row-exposure.log, caught-ci-ocr-readiness.log, model schema/envelope rejection and privacy/source controls | PASS |
 | ADRs / interview kit | docs/adr, INTERVIEW.md, DRILL.md | PASS |
 | Dependency scans | Core/browser and optional model scans retained | PASS locally |
-| CI including actual container/browser | Exact final head verified by coordinator in DOCKET_CI_VERIFICATION.json | Pending final verification |
+| CI including actual container/browser | [Actual Linux run](https://github.com/rjrddy/docket/actions/runs/40027341767); final exact head tracked by coordinator in DOCKET_CI_VERIFICATION.json | PASS on implementation run; final head checked separately |
 | No unmeasured claims | Generated README; zero default automation, model errors and review limitation explicit | PASS within stated measurement scope |
 
 Routine CI skips the heavyweight optional model/HTTP test requiring local weights; its actual run is retained separately. Ordinary schema/source tests always run. OCR results can vary by Tesseract/platform version, which is recorded; a CI artifact is not silently presented as the original laptop campaign.

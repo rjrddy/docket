@@ -1,5 +1,5 @@
 {
-  "elapsed_seconds": 92.90262704098132,
+  "elapsed_seconds": 92.69260079204105,
   "page_errors": [],
   "receipts": [
     {
@@ -17,6 +17,11 @@
     },
     {
       "kind": "mock-payer-ambiguous-timeout-reconciled"
+    },
+    {
+      "kind": "actual-local-model-proposals",
+      "schema_valid": true,
+      "automatic_approval": false
     },
     {
       "kind": "viewer-redacted-no-write"
@@ -212,24 +217,6 @@
     {
       "kind": "scripted-truth-assisted-review",
       "id": "doc-0007",
-      "revision": 4,
-      "image_attested": true
-    },
-    {
-      "kind": "scripted-truth-assisted-review",
-      "id": "doc-0008",
-      "revision": 4,
-      "image_attested": true
-    },
-    {
-      "kind": "scripted-truth-assisted-review",
-      "id": "doc-0009",
-      "revision": 4,
-      "image_attested": true
-    },
-    {
-      "kind": "scripted-truth-assisted-review",
-      "id": "doc-0010",
       "revision": 4,
       "image_attested": true
     }
