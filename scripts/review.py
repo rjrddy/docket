@@ -166,6 +166,9 @@ def main() -> None:
                     page.get_by_text("Human benefit remains unmeasured.", exact=False)
                 ).to_be_visible()
                 expect(page.get_by_text("Every template gets its own line.")).to_be_visible()
+                expect(
+                    page.get_by_role("heading", name="Qwen/Qwen2.5-0.5B-Instruct")
+                ).to_be_visible()
                 page.screenshot(path=str(OUT / "evaluation.png"), full_page=True)
                 page.get_by_role("button", name="Review desk", exact=False).click()
                 page.locator("summary").filter(has_text="Access settings").click()

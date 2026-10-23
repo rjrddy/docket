@@ -1,0 +1,40 @@
+....Fs.....                                                              [100%]
+=================================== FAILURES ===================================
+__________ test_real_worker_roles_claim_rejection_and_payer_recovery ___________
+
+tmp_path = PosixPath('/private/var/folders/tx/r4bmp29x58v41hgmtzrwwx3h0000gn/T/pytest-of-rajreddy/pytest-168/test_real_worker_roles_claim_r0')
+
+    def test_real_worker_roles_claim_rejection_and_payer_recovery(tmp_path):
+        from docket import store
+        from docket.documents import fixture
+    
+        store.initialize()
+        with store.connection() as c:
+            c.execute("TRUNCATE audit,outbox,mock_payer,jobs,documents RESTART IDENTITY CASCADE")
+        log = tmp_path / "server.log"
+        with log.open("w") as out:
+            child = subprocess.Popen(
+                [str(ROOT / ".venv/bin/python"), "-m", "docket.server"],
+                cwd=ROOT,
+                env={**os.environ, "PORT": "18102"},
+                stdout=out,
+                stderr=out,
+            )
+            try:
+                for _ in range(300):
+                    try:
+                        if request("/api/documents")[0] == 200:
+                            break
+                    except OSError:
+                        time.sleep(0.05)
+                assert request("/api/documents", token="wrong")[0] == 401
+                assert request("/api/ingest", {"fixture": 15}, token="local-view")[0] == 403
+                assert request("/api/ingest", {"fixture": True})[0] == 400
+                code, evidence = request("/api/evidence", token="local-view")
+>               assert code == 200 and "rows" not in evidence
+E               AssertionError: assert (200 == 200 and 'rows' not in {'scope': 'synthetic rendered PNGs, actual Tesseract OCR; confidence is uncalibrated; scripted truth-assisted review, NOT independent human review', 'documents': 36, 'fields_per_document': 7, 'ocr_seconds': 9.450446791946888, ...})
+
+tests/test_http.py:54: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_http.py::test_real_worker_roles_claim_rejection_and_payer_recovery
+1 failed, 9 passed, 1 skipped in 2.90s

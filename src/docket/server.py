@@ -111,6 +111,14 @@ def handler(tokens: dict):
                             if file.exists()
                             else {"status": "not measured"}
                         )
+                        # Dashboard access never grants raw fixture/source/model-output access.
+                        data.pop("rows", None)
+                        model_file = ROOT / "docs/results/model-evaluation.json"
+                        if model_file.exists():
+                            model = json.loads(model_file.read_text())
+                            data["model"] = {
+                                key: value for key, value in model.items() if key != "rows"
+                            }
                     elif path == "/api/document":
                         data = store.get(args.get("id", [""])[0])
                         if role == "viewer" and data["result"]:

@@ -50,6 +50,11 @@ def test_real_worker_roles_claim_rejection_and_payer_recovery(tmp_path):
             assert request("/api/documents", token="wrong")[0] == 401
             assert request("/api/ingest", {"fixture": 15}, token="local-view")[0] == 403
             assert request("/api/ingest", {"fixture": True})[0] == 400
+            code, evidence = request("/api/evidence", token="local-view")
+            assert code == 200 and "rows" not in evidence
+            assert evidence["model"]["total_fields"] > 0 and "rows" not in evidence["model"]
+            assert "synthetic@example.invalid" not in json.dumps(evidence)
+            assert "source_text" not in json.dumps(evidence)
             for _ in range(500):
                 row = request("/api/document?id=doc-0002")[1]
                 if row["state"] in ["auto", "review"]:
