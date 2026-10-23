@@ -40,8 +40,13 @@ def seed(count: int = 12) -> list[str]:
 def handler(tokens: dict):
     class Handler(BaseHTTPRequestHandler):
         def log_message(self, format: str, *args) -> None:
+            # Parser errors arrive before auth and may embed a raw request/version.
+            candidate = args[0] if format.startswith("code ") else args[1] if len(args) > 1 else ""
+            status = str(candidate)
+            if not re.fullmatch(r"[1-5]\d{2}", status):
+                status = "unknown"
             print(
-                log_record(event="http", status=str(args[1]) if len(args) > 1 else "unknown"),
+                log_record(event="http", status=status),
                 flush=True,
             )
 

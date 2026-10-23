@@ -3,6 +3,7 @@
 import json
 import os
 import shutil
+import socket
 import subprocess
 import time
 import urllib.error
@@ -49,6 +50,10 @@ def test_real_worker_roles_claim_rejection_and_payer_recovery(tmp_path):
                 except OSError:
                     time.sleep(0.05)
             assert request("/api/documents", token="wrong")[0] == 401
+            # HTTP-parser diagnostics can contain a raw request line before routing/auth.
+            with socket.create_connection(("127.0.0.1", 18102), timeout=3) as raw:
+                raw.sendall(b"GET / HTTP/synthetic@example.invalid\r\n\r\n")
+                assert b"400" in raw.recv(4096)
             assert request("/api/ingest", {"fixture": 15}, token="local-view")[0] == 403
             assert request("/api/ingest", {"fixture": True})[0] == 400
             code, evidence = request("/api/evidence", token="local-view")
