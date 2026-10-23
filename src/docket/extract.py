@@ -2,6 +2,7 @@
 
 import csv
 import io
+import os
 import re
 import subprocess
 from difflib import SequenceMatcher
@@ -52,6 +53,7 @@ def ocr(path: Path) -> dict:
         capture_output=True,
         text=True,
         timeout=15,
+        env={**os.environ, "OMP_THREAD_LIMIT": "1"},
     )
     tokens = []
     lines: dict[tuple, list[dict]] = {}

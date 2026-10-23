@@ -2,6 +2,7 @@
 
 import json
 import os
+import shutil
 import subprocess
 import time
 import urllib.error
@@ -57,10 +58,10 @@ def test_real_worker_roles_claim_rejection_and_payer_recovery(tmp_path):
             assert "source_text" not in json.dumps(evidence)
             for _ in range(500):
                 row = request("/api/document?id=doc-0002")[1]
-                if row["state"] in ["auto", "review"]:
+                if row["state"] in ["auto", "review", "error"]:
                     break
                 time.sleep(0.05)
-            assert row["result"] is not None
+            assert row["result"] is not None, {"state": row["state"], "metrics": store.metrics()}
             code, redacted = request("/api/document?id=doc-0002", token="local-view")
             assert code == 200 and redacted["result"]["redacted"]
             assert request("/api/image?id=doc-0002", token="local-view")[0] == 403
@@ -140,6 +141,7 @@ def test_real_worker_roles_claim_rejection_and_payer_recovery(tmp_path):
         finally:
             child.terminate()
             child.wait(timeout=25)
+            shutil.copyfile(log, ROOT / "docs/results/http-integration-server.log")
     text = log.read_text()
     assert (
         "DEMO710002" not in text

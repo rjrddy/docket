@@ -1,0 +1,216 @@
+verify	Run make setup build lint test bench scan	﻿2026-10-23T21:28:35.3821816Z ##[group]Run make setup build lint test bench scan
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:35.3822257Z ^[[36;1mmake setup build lint test bench scan^[[0m
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:35.3860485Z shell: /usr/bin/bash -e {0}
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:35.3860825Z env:
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:35.3861487Z   DATABASE_URL: ***127.0.0.1:5432/docket
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:35.3861871Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:35.3862348Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:35.3862760Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:35.3863125Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:35.3863520Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:35.3863915Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:35.3864243Z ##[endgroup]
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:35.3942841Z python3 -m venv .venv
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:39.3176864Z .venv/bin/python -m pip install -r requirements-dev.txt
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:39.6973217Z Collecting pip==26.2.2 (from -r requirements-dev.txt (line 1))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:39.7759364Z   Downloading pip-26.2.2-py3-none-any.whl.metadata (4.6 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.0094028Z Collecting Pillow==13.0.0 (from -r requirements-dev.txt (line 2))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.0225175Z   Downloading pillow-13.0.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.0480045Z Collecting psycopg==3.3.6 (from psycopg[binary]==3.3.6->-r requirements-dev.txt (line 3))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.0608946Z   Downloading psycopg-3.3.6-py3-none-any.whl.metadata (4.4 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.0925583Z Collecting pytest==9.1.1 (from -r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.1054777Z   Downloading pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.3862291Z Collecting ruff==0.17.1 (from -r requirements-dev.txt (line 5))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.3994928Z   Downloading ruff-0.17.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.4253049Z Collecting pip-audit==2.9.0 (from -r requirements-dev.txt (line 6))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.4387111Z   Downloading pip_audit-2.9.0-py3-none-any.whl.metadata (27 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.4639138Z Collecting iniconfig>=1.0.1 (from pytest==9.1.1->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.4771495Z   Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.4986975Z Collecting packaging>=22 (from pytest==9.1.1->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.5116050Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.5311227Z Collecting pluggy<2,>=1.5 (from pytest==9.1.1->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.5441747Z   Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.5679705Z Collecting pygments>=2.7.2 (from pytest==9.1.1->-r requirements-dev.txt (line 4))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.5810587Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.6029848Z Collecting CacheControl>=0.13.0 (from CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 6))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.6150865Z   Downloading cachecontrol-0.14.4-py3-none-any.whl.metadata (3.1 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.6460000Z Collecting cyclonedx-python-lib<10,>=5 (from pip-audit==2.9.0->-r requirements-dev.txt (line 6))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.6604549Z   Downloading cyclonedx_python_lib-9.1.0-py3-none-any.whl.metadata (6.5 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.6807240Z Collecting pip-api>=0.0.28 (from pip-audit==2.9.0->-r requirements-dev.txt (line 6))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.6934850Z   Downloading pip_api-0.0.35-py3-none-any.whl.metadata (17 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.7141549Z Collecting pip-requirements-parser>=32.0.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 6))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.7288495Z   Downloading pip_requirements_parser-32.0.1-py3-none-any.whl.metadata (9.3 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.7571664Z Collecting requests>=2.31.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 6))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.7699976Z   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.8016301Z Collecting rich>=12.4 (from pip-audit==2.9.0->-r requirements-dev.txt (line 6))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.8146384Z   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.8342112Z Collecting toml>=0.10 (from pip-audit==2.9.0->-r requirements-dev.txt (line 6))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.8472771Z   Downloading toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.8712810Z Collecting platformdirs>=4.2.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 6))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:40.8841350Z   Downloading platformdirs-4.13.5-py3-none-any.whl.metadata (5.5 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.0124406Z Collecting psycopg-binary==3.3.6 (from psycopg[binary]==3.3.6->-r requirements-dev.txt (line 3))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.0252780Z   Downloading psycopg_binary-3.3.6-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.7 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.0465954Z Collecting license-expression<31,>=30 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 6))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.0594422Z   Downloading license_expression-30.4.4-py3-none-any.whl.metadata (11 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.0825329Z Collecting packageurl-python<2,>=0.11 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 6))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.0959037Z   Downloading packageurl_python-0.17.6-py3-none-any.whl.metadata (5.1 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.1178330Z Collecting py-serializable<3.0.0,>=2.0.0 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 6))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.1306821Z   Downloading py_serializable-2.1.0-py3-none-any.whl.metadata (4.3 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.1506042Z Collecting sortedcontainers<3.0.0,>=2.4.0 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 6))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.1635420Z   Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata (10 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.1832331Z Collecting boolean.py>=4.0 (from license-expression<31,>=30->cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 6))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.1961942Z   Downloading boolean_py-5.0-py3-none-any.whl.metadata (2.3 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.2163394Z Collecting defusedxml<0.8.0,>=0.7.1 (from py-serializable<3.0.0,>=2.0.0->cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 6))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.2291937Z   Downloading defusedxml-0.7.1-py2.py3-none-any.whl.metadata (32 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.3029898Z Collecting msgpack<2.0.0,>=0.5.2 (from CacheControl>=0.13.0->CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 6))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.3159620Z   Downloading msgpack-1.2.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.3 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.3445911Z Collecting filelock>=3.8.0 (from CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 6))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.3576650Z   Downloading filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.3856153Z Collecting pyparsing (from pip-requirements-parser>=32.0.0->pip-audit==2.9.0->-r requirements-dev.txt (line 6))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.3986580Z   Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.5022930Z Collecting charset_normalizer<4,>=2 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 6))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.5152301Z   Downloading charset_normalizer-3.5.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.5403559Z Collecting idna<4,>=2.5 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 6))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.5533432Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.5783704Z Collecting urllib3<3,>=1.26 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 6))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.5913207Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.6141272Z Collecting certifi>=2023.5.7 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 6))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.6270845Z   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.6482592Z Collecting markdown-it-py>=2.2.0 (from rich>=12.4->pip-audit==2.9.0->-r requirements-dev.txt (line 6))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.6613089Z   Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.6820337Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=12.4->pip-audit==2.9.0->-r requirements-dev.txt (line 6))
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.6949229Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.7120116Z Downloading pip-26.2.2-py3-none-any.whl (1.8 MB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.7869171Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 30.6 MB/s  0:00:00
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.8002011Z Downloading pillow-13.0.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.8799047Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 88.6 MB/s  0:00:00
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.8930978Z Downloading psycopg-3.3.6-py3-none-any.whl (215 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.9079663Z Downloading pytest-9.1.1-py3-none-any.whl (386 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:41.9235721Z Downloading ruff-0.17.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.4 MB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.0001915Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.4/10.4 MB 137.4 MB/s  0:00:00
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.0133357Z Downloading pip_audit-2.9.0-py3-none-any.whl (58 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.0283514Z Downloading psycopg_binary-3.3.6-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.2 MB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.0585643Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.2/5.2 MB 179.6 MB/s  0:00:00
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.0723763Z Downloading cyclonedx_python_lib-9.1.0-py3-none-any.whl (374 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.0875721Z Downloading license_expression-30.4.4-py3-none-any.whl (120 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.1023491Z Downloading packageurl_python-0.17.6-py3-none-any.whl (36 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.1169106Z Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.1315292Z Downloading py_serializable-2.1.0-py3-none-any.whl (23 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.1459018Z Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.1602478Z Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.1747064Z Downloading boolean_py-5.0-py3-none-any.whl (26 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.1904685Z Downloading cachecontrol-0.14.4-py3-none-any.whl (22 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.2052774Z Downloading msgpack-1.2.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (466 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.2213555Z Downloading filelock-4.2.4-py3-none-any.whl (162 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.2359446Z Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.2502888Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.2651808Z Downloading pip_api-0.0.35-py3-none-any.whl (123 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.2802583Z Downloading pip_requirements_parser-32.0.1-py3-none-any.whl (35 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.2945354Z Downloading platformdirs-4.13.5-py3-none-any.whl (32 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.3091342Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.3143482Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 300.7 MB/s  0:00:00
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.3273607Z Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.3420993Z Downloading charset_normalizer-3.5.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (254 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.3572239Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.3720013Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.3873877Z Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.4019133Z Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.4169422Z Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.4314108Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.4549748Z Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.4692243Z Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:42.6064423Z Installing collected packages: sortedcontainers, boolean.py, urllib3, toml, ruff, pyparsing, pygments, psycopg-binary, psycopg, pluggy, platformdirs, pip, Pillow, packaging, packageurl-python, msgpack, mdurl, license-expression, iniconfig, idna, filelock, defusedxml, charset_normalizer, certifi, requests, pytest, py-serializable, pip-requirements-parser, pip-api, markdown-it-py, rich, cyclonedx-python-lib, CacheControl, pip-audit
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:43.6115177Z   Attempting uninstall: pip
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:43.6136994Z     Found existing installation: pip 26.2.1
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:43.6333318Z     Uninstalling pip-26.2.1:
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:43.6370864Z       Successfully uninstalled pip-26.2.1
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:45.4562249Z 
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:45.4591171Z Successfully installed CacheControl-0.14.4 Pillow-13.0.0 boolean.py-5.0 certifi-2026.10.23 charset_normalizer-3.5.2 cyclonedx-python-lib-9.1.0 defusedxml-0.7.1 filelock-4.2.4 idna-3.20 iniconfig-2.3.1 license-expression-30.4.4 markdown-it-py-4.2.0 mdurl-0.1.2 msgpack-1.2.3 packageurl-python-0.17.6 packaging-26.3 pip-26.2.2 pip-api-0.0.35 pip-audit-2.9.0 pip-requirements-parser-32.0.1 platformdirs-4.13.5 pluggy-1.7.0 psycopg-3.3.6 psycopg-binary-3.3.6 py-serializable-2.1.0 pygments-2.21.0 pyparsing-3.3.3 pytest-9.1.1 requests-2.34.2 rich-15.0.0 ruff-0.17.1 sortedcontainers-2.4.0 toml-0.10.2 urllib3-2.8.0
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:45.4597262Z 
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:45.4597688Z [notice] A new release of pip is available: 26.2.1 -> 26.2.2
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:45.4598653Z [notice] To update, run: /home/runner/work/docket/docket/.venv/bin/python -m pip install --upgrade pip
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:45.5532761Z npm ci --prefix apps/web
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:46.8612826Z 
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:46.8614096Z added 23 packages, and audited 24 packages in 1s
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:46.8614648Z 
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:46.8615014Z 6 packages are looking for funding
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:46.8615456Z   run `npm fund` for details
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:46.8620109Z 
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:46.8620926Z found 0 vulnerabilities
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:46.8818876Z npm run build --prefix apps/web
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:46.9569308Z 
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:46.9569807Z > docket-reading-room@0.1.0 build
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:46.9570363Z > tsc --noEmit && vite build
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:46.9570627Z 
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:48.2394225Z ^[[36mvite v6.4.4 ^[[32mbuilding for production...^[[36m^[[39m
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:48.3081347Z transforming...
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:48.9262223Z ^[[32m✓^[[39m 28 modules transformed.
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:49.0261159Z rendering chunks...
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:49.0315799Z computing gzip size...
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:49.0409311Z ^[[2mdist/^[[22m^[[32mindex.html                 ^[[39m^[[1m^[[2m  0.63 kB^[[22m^[[1m^[[22m^[[2m │ gzip:  0.38 kB^[[22m
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:49.0410682Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[35mindex-BrQk4hvg.css  ^[[39m^[[1m^[[2m 20.11 kB^[[22m^[[1m^[[22m^[[2m │ gzip:  5.13 kB^[[22m
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:49.0412073Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[36mindex-B7kdMRNX.js   ^[[39m^[[1m^[[2m214.84 kB^[[22m^[[1m^[[22m^[[2m │ gzip: 67.34 kB^[[22m
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:49.0412886Z ^[[32m✓ built in 781ms^[[39m
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:49.0591586Z .venv/bin/ruff check src scripts tests
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:49.0681761Z All checks passed!
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:49.0685848Z .venv/bin/ruff format --check src scripts tests
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:49.0790039Z 21 files already formatted
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:49.0793920Z npm run lint --prefix apps/web
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:49.1511989Z 
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:49.1513002Z > docket-reading-room@0.1.0 lint
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:49.1513699Z > tsc --noEmit && prettier --check src index.html package.json tsconfig.json
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:49.1514062Z 
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:50.2587982Z Checking formatting...
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:50.6858498Z All matched files use Prettier code style!
+verify	Run make setup build lint test bench scan	2026-10-23T21:28:50.7010073Z .venv/bin/python scripts/local.py test
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2876985Z ....Fs.....                                                              [100%]
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2882177Z =================================== FAILURES ===================================
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2883299Z __________ test_real_worker_roles_claim_rejection_and_payer_recovery ___________
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2883919Z 
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2884636Z tmp_path = PosixPath('/tmp/pytest-of-runner/pytest-0/test_real_worker_roles_claim_r0')
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2885363Z 
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2885887Z     def test_real_worker_roles_claim_rejection_and_payer_recovery(tmp_path):
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2886581Z         from docket import store
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2887116Z         from docket.documents import fixture
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2887694Z     
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2888075Z         store.initialize()
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2888533Z         with store.connection() as c:
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2889298Z             c.execute("TRUNCATE audit,outbox,mock_payer,jobs,documents RESTART IDENTITY CASCADE")
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2890055Z         log = tmp_path / "server.log"
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2891085Z         with log.open("w") as out:
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2891575Z             child = subprocess.Popen(
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2892180Z                 [str(ROOT / ".venv/bin/python"), "-m", "docket.server"],
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2892740Z                 cwd=ROOT,
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2893248Z                 env={**os.environ, "PORT": "18102"},
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2893702Z                 stdout=out,
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2894103Z                 stderr=out,
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2894517Z             )
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2894852Z             try:
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2895289Z                 for _ in range(300):
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2895695Z                     try:
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2896694Z                         if request("/api/documents")[0] == 200:
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2897306Z                             break
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2897870Z                     except OSError:
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2898391Z                         time.sleep(0.05)
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2898975Z                 assert request("/api/documents", token="wrong")[0] == 401
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2899730Z                 assert request("/api/ingest", {"fixture": 15}, token="local-view")[0] == 403
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2900492Z                 assert request("/api/ingest", {"fixture": True})[0] == 400
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2901184Z                 code, evidence = request("/api/evidence", token="local-view")
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2901871Z                 assert code == 200 and "rows" not in evidence
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2902575Z                 assert evidence["model"]["total_fields"] > 0 and "rows" not in evidence["model"]
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2903362Z                 assert "synthetic@example.invalid" not in json.dumps(evidence)
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2904050Z                 assert "source_text" not in json.dumps(evidence)
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2904576Z                 for _ in range(500):
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2905175Z                     row = request("/api/document?id=doc-0002")[1]
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2905751Z                     if row["state"] in ["auto", "review"]:
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2906235Z                         break
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2906709Z                     time.sleep(0.05)
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2907229Z >               assert row["result"] is not None
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2907945Z E               assert None is not None
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2908201Z 
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2908482Z tests/test_http.py:63: AssertionError
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2909101Z =========================== short test summary info ============================
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2910336Z FAILED tests/test_http.py::test_real_worker_roles_claim_rejection_and_payer_recovery - assert None is not None
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.2911177Z 1 failed, 9 passed, 1 skipped in 42.89s
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.3458240Z make: *** [Makefile:14: test] Error 1
+verify	Run make setup build lint test bench scan	2026-10-23T21:29:34.3472764Z ##[error]Process completed with exit code 2.
