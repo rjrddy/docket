@@ -1,0 +1,238 @@
+{
+  "elapsed_seconds": 92.90262704098132,
+  "page_errors": [],
+  "receipts": [
+    {
+      "kind": "unsupported-negation-rejected"
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0002",
+      "revision": 2,
+      "image_attested": true
+    },
+    {
+      "kind": "stale-review-rejected",
+      "status": 409
+    },
+    {
+      "kind": "mock-payer-ambiguous-timeout-reconciled"
+    },
+    {
+      "kind": "viewer-redacted-no-write"
+    },
+    {
+      "kind": "responsive",
+      "width": 390,
+      "no_overflow": true
+    },
+    {
+      "kind": "responsive",
+      "width": 768,
+      "no_overflow": true
+    },
+    {
+      "kind": "responsive",
+      "width": 1024,
+      "no_overflow": true
+    },
+    {
+      "kind": "responsive",
+      "width": 1600,
+      "no_overflow": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0003",
+      "revision": 2,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0004",
+      "revision": 2,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0005",
+      "revision": 2,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0006",
+      "revision": 2,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0007",
+      "revision": 2,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0008",
+      "revision": 2,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0009",
+      "revision": 2,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0010",
+      "revision": 2,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0011",
+      "revision": 2,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0000",
+      "revision": 2,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0001",
+      "revision": 2,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0002",
+      "revision": 3,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0003",
+      "revision": 3,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0004",
+      "revision": 3,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0005",
+      "revision": 3,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0006",
+      "revision": 3,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0007",
+      "revision": 3,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0008",
+      "revision": 3,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0009",
+      "revision": 3,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0010",
+      "revision": 3,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0011",
+      "revision": 3,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0000",
+      "revision": 3,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0001",
+      "revision": 3,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0002",
+      "revision": 4,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0003",
+      "revision": 4,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0004",
+      "revision": 4,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0005",
+      "revision": 4,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0006",
+      "revision": 4,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0007",
+      "revision": 4,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0008",
+      "revision": 4,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0009",
+      "revision": 4,
+      "image_attested": true
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0010",
+      "revision": 4,
+      "image_attested": true
+    }
+  ],
+  "review_scope": "scripted truth-assisted form operations, not independent human benefit"
+}

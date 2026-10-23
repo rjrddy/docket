@@ -1,0 +1,403 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "torch": "2.14.1",
+  "transformers": "5.20.2",
+  "documents": 6,
+  "schema_valid_documents": 6,
+  "correct_fields": 18,
+  "total_fields": 42,
+  "proposed_nonempty_fields": 23,
+  "unsupported_fields": 5,
+  "unsupported_rate": 0.21739130434782608,
+  "accepted_fields": 18,
+  "accepted_incorrect_fields": 0,
+  "seconds": 27.083941125078127,
+  "scope": "unconstrained greedy generation; unsupported proposals rejected; schema failures separate; no automatic approval or clinical factuality claim",
+  "rows": [
+    {
+      "id": "doc-0000",
+      "source_text": "SYNTHETIC / NOT A REAL RECORD\nINVOICE-A \u2014 DEMO COPY\nDocument: SYN-0000\nDate: 2026-02-01\nTotal: 6324.74\nVendor: DEMO ENTITY 00\nCustomer: DEMO710000\nZone: TESTZONE-O\nDirectory: entityOO.example.invalid\nContact: synthetic@example.invalid / 555-010-1234\nNo urgent action is stated. Synthetic evaluation only.",
+      "correct": {
+        "document_id": false,
+        "date": true,
+        "amount": true,
+        "entity": true,
+        "reference": true,
+        "zone": false,
+        "domain": false
+      },
+      "result": {
+        "raw": "```json\n{\n  \"document_id\": \"\",\n  \"date\": \"2026-02-01\",\n  \"amount\": \"6324.74\",\n  \"entity\": \"DEMO ENTITY 00\",\n  \"reference\": \"DEMO710000\",\n  \"zone\": \"TESTZONE-O\",\n  \"domain\": \"entityOO.example.invalid\"\n}\n```",
+        "schema_valid": true,
+        "fields": {
+          "document_id": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "date": {
+            "value": "2026-02-01",
+            "supported": true,
+            "start": 77,
+            "end": 87
+          },
+          "amount": {
+            "value": "6324.74",
+            "supported": true,
+            "start": 95,
+            "end": 102
+          },
+          "entity": {
+            "value": "DEMO ENTITY 00",
+            "supported": true,
+            "start": 111,
+            "end": 125
+          },
+          "reference": {
+            "value": "DEMO710000",
+            "supported": true,
+            "start": 136,
+            "end": 146
+          },
+          "zone": {
+            "value": "TESTZONE-O",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "domain": {
+            "value": "entityOO.example.invalid",
+            "supported": false,
+            "start": null,
+            "end": null
+          }
+        },
+        "seconds": 6.793259665952064,
+        "method": "actual greedy local Qwen2.5-0.5B generation, not a heuristic or constrained-choice proxy",
+        "automatic_approval": false
+      }
+    },
+    {
+      "id": "doc-0001",
+      "source_text": "SYNTHETIC / NOT A REAL RECORD\nSTATEMENT-A \u2014 DEMO COPY\nDocument: SYN-0001\nDate: 2026-02-02\nBalance: 4929.02\nEntity: DEMO ENTITY 01\nAccount: DEMO710001\nZone: TESTZONE-1\nDirectory: entityOl.example.invalid\nContact: synthetic@example.invalid / 555-010-1234\nNo urgent action is stated. Synthetic evaluation only.",
+      "correct": {
+        "document_id": false,
+        "date": true,
+        "amount": true,
+        "entity": true,
+        "reference": false,
+        "zone": true,
+        "domain": false
+      },
+      "result": {
+        "raw": "```json\n{\n  \"document_id\": \"\",\n  \"date\": \"2026-02-02\",\n  \"amount\": \"4929.02\",\n  \"entity\": \"DEMO ENTITY 01\",\n  \"reference\": \"\",\n  \"zone\": \"TESTZONE-1\",\n  \"domain\": \"\"\n}\n```",
+        "schema_valid": true,
+        "fields": {
+          "document_id": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "date": {
+            "value": "2026-02-02",
+            "supported": true,
+            "start": 79,
+            "end": 89
+          },
+          "amount": {
+            "value": "4929.02",
+            "supported": true,
+            "start": 99,
+            "end": 106
+          },
+          "entity": {
+            "value": "DEMO ENTITY 01",
+            "supported": true,
+            "start": 115,
+            "end": 129
+          },
+          "reference": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "zone": {
+            "value": "TESTZONE-1",
+            "supported": true,
+            "start": 156,
+            "end": 166
+          },
+          "domain": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          }
+        },
+        "seconds": 4.029727500048466,
+        "method": "actual greedy local Qwen2.5-0.5B generation, not a heuristic or constrained-choice proxy",
+        "automatic_approval": false
+      }
+    },
+    {
+      "id": "doc-0002",
+      "source_text": "SYNTHETIC / NOT A REAL RECORD\nREFERRAL-A \u2014 DEMO COPY\nDocument: SYN-0002\nDate: 2026-02-03\nCopay: 3559.61\nProvider: DEMO ENTITY 02\nMember: DEMO710002\nZone: TESTZONE-2\nDirectory: entityO2.example.invalid\nContact: synthetic@example.invalid / 555-010-1234\nNo urgent action is stated. Synthetic evaluation only.",
+      "correct": {
+        "document_id": false,
+        "date": true,
+        "amount": true,
+        "entity": false,
+        "reference": false,
+        "zone": true,
+        "domain": false
+      },
+      "result": {
+        "raw": "```json\n{\n  \"document_id\": \"\",\n  \"date\": \"2026-02-03\",\n  \"amount\": \"3559.61\",\n  \"entity\": \"\",\n  \"reference\": \"\",\n  \"zone\": \"TESTZONE-2\",\n  \"domain\": \"\"\n}\n```",
+        "schema_valid": true,
+        "fields": {
+          "document_id": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "date": {
+            "value": "2026-02-03",
+            "supported": true,
+            "start": 78,
+            "end": 88
+          },
+          "amount": {
+            "value": "3559.61",
+            "supported": true,
+            "start": 96,
+            "end": 103
+          },
+          "entity": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "reference": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "zone": {
+            "value": "TESTZONE-2",
+            "supported": true,
+            "start": 154,
+            "end": 164
+          },
+          "domain": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          }
+        },
+        "seconds": 4.325707375071943,
+        "method": "actual greedy local Qwen2.5-0.5B generation, not a heuristic or constrained-choice proxy",
+        "automatic_approval": false
+      }
+    },
+    {
+      "id": "doc-0018",
+      "source_text": "SYNTHETIC / NOT A REAL RECORD\nINVOICE-A \u2014 DEMO Copy\nDocument: SYN-0018\nDate: 2026-02-19\nTotal: 5381.11\nVendor: DEMO ENTITY 06\nCustomer: DEMO710018\nZone: TESTZONE-O\nDirectory: entity06.example.invalid\nContact: synthetic@example. invalid / 555-010-1234\nNo urgent action is stated. Synthetic evaluation only.",
+      "correct": {
+        "document_id": false,
+        "date": true,
+        "amount": true,
+        "entity": false,
+        "reference": true,
+        "zone": false,
+        "domain": true
+      },
+      "result": {
+        "raw": "```json\n{\n  \"document_id\": \"\",\n  \"date\": \"2026-02-19\",\n  \"amount\": \"5381.11\",\n  \"entity\": \"DEMO\",\n  \"reference\": \"DEMO710018\",\n  \"zone\": \"TESTZONE-O\",\n  \"domain\": \"entity06.example.invalid\"\n}\n```",
+        "schema_valid": true,
+        "fields": {
+          "document_id": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "date": {
+            "value": "2026-02-19",
+            "supported": true,
+            "start": 77,
+            "end": 87
+          },
+          "amount": {
+            "value": "5381.11",
+            "supported": true,
+            "start": 95,
+            "end": 102
+          },
+          "entity": {
+            "value": "DEMO",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "reference": {
+            "value": "DEMO710018",
+            "supported": true,
+            "start": 136,
+            "end": 146
+          },
+          "zone": {
+            "value": "TESTZONE-O",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "domain": {
+            "value": "entity06.example.invalid",
+            "supported": true,
+            "start": 175,
+            "end": 199
+          }
+        },
+        "seconds": 4.405083375051618,
+        "method": "actual greedy local Qwen2.5-0.5B generation, not a heuristic or constrained-choice proxy",
+        "automatic_approval": false
+      }
+    },
+    {
+      "id": "doc-0030",
+      "source_text": "SYNTHETIC / NOT A REAL RECORD\nINVOICE A \u2014 DEMO COPY\nDocument: $\u00a5W-0030\nDate: 2026-02-03\nWeal: 855.53\nVendor: DEMO ENTITY 06\nCustomer: 0\u20acM0710030\nZone: TESTZONE-0\nOwectory entityOs. example invalid\nContact: synthetic @example invalid / 955-010-1234\n(No urgent action Is stated. Synthetic evaluation only",
+      "correct": {
+        "document_id": false,
+        "date": true,
+        "amount": false,
+        "entity": true,
+        "reference": false,
+        "zone": true,
+        "domain": false
+      },
+      "result": {
+        "raw": "```json\n{\n  \"document_id\": \"$\u00a5W-0030\",\n  \"date\": \"2026-02-03\",\n  \"amount\": \"\",\n  \"entity\": \"DEMO ENTITY 06\",\n  \"reference\": \"\",\n  \"zone\": \"TESTZONE-0\",\n  \"domain\": \"\"\n}\n```",
+        "schema_valid": true,
+        "fields": {
+          "document_id": {
+            "value": "$\u00a5W-0030",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "date": {
+            "value": "2026-02-03",
+            "supported": true,
+            "start": 77,
+            "end": 87
+          },
+          "amount": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "entity": {
+            "value": "DEMO ENTITY 06",
+            "supported": true,
+            "start": 109,
+            "end": 123
+          },
+          "reference": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "zone": {
+            "value": "TESTZONE-0",
+            "supported": true,
+            "start": 151,
+            "end": 161
+          },
+          "domain": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          }
+        },
+        "seconds": 4.17189470899757,
+        "method": "actual greedy local Qwen2.5-0.5B generation, not a heuristic or constrained-choice proxy",
+        "automatic_approval": false
+      }
+    },
+    {
+      "id": "doc-0035",
+      "source_text": "SYNTHETIC / NOT A REAL RECORD\nREFERRALS \u2014 DEMO COPY\nReference document: SYN-0035\nService date: 2026-0208\nCopay $462.23\nProvider DEMO ENTITY 11\nMember DEMO710035\nZone: TESTZONE-2\nOwectory: entity 1 example invalid\nContact: synthetic @example invalid / 955-010-1234\n(No urgent action Is stated. Synthetic evaluation only",
+      "correct": {
+        "document_id": false,
+        "date": false,
+        "amount": false,
+        "entity": false,
+        "reference": false,
+        "zone": false,
+        "domain": false
+      },
+      "result": {
+        "raw": "```json\n{\n  \"document_id\": \"\",\n  \"date\": \"\",\n  \"amount\": \"\",\n  \"entity\": \"\",\n  \"reference\": \"\",\n  \"zone\": \"\",\n  \"domain\": \"\"\n}\n```",
+        "schema_valid": true,
+        "fields": {
+          "document_id": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "date": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "amount": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "entity": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "reference": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "zone": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "domain": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          }
+        },
+        "seconds": 3.3582684999564663,
+        "method": "actual greedy local Qwen2.5-0.5B generation, not a heuristic or constrained-choice proxy",
+        "automatic_approval": false
+      }
+    }
+  ]
+}

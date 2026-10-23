@@ -1,0 +1,145 @@
+{"event": "ready", "status": "http://127.0.0.1:18103"}
+{"event": "http", "status": "200"}
+{"document": "doc-0000", "event": "extraction", "status": "published"}
+{"document": "doc-0001", "event": "extraction", "status": "published"}
+{"document": "doc-0002", "event": "extraction", "status": "published"}
+{"document": "doc-0003", "event": "extraction", "status": "published"}
+{"document": "doc-0004", "event": "extraction", "status": "published"}
+{"document": "doc-0005", "event": "extraction", "status": "published"}
+{"document": "doc-0006", "event": "extraction", "status": "published"}
+{"document": "doc-0007", "event": "extraction", "status": "published"}
+{"document": "doc-0008", "event": "extraction", "status": "published"}
+{"document": "doc-0009", "event": "extraction", "status": "published"}
+{"document": "doc-0010", "event": "extraction", "status": "published"}
+{"document": "doc-0011", "event": "extraction", "status": "published"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "404"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "409"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+W1023 16:23:29.688000 16245 .venv/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 5830.42it/s]
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "401"}
+{"event": "http", "status": "401"}
+{"event": "http", "status": "401"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}

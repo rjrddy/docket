@@ -1,0 +1,138 @@
+{
+  "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+  "torch": "2.14.1",
+  "transformers": "5.20.2",
+  "documents": 6,
+  "schema_valid_documents": 0,
+  "correct_fields": 0,
+  "total_fields": 42,
+  "proposed_nonempty_fields": 0,
+  "unsupported_fields": 0,
+  "unsupported_rate": null,
+  "accepted_unsupported_fields": 0,
+  "seconds": 19.64058566582389,
+  "scope": "unconstrained greedy generation; unsupported proposals rejected; schema failures separate; no automatic approval or clinical factuality claim",
+  "rows": [
+    {
+      "id": "doc-0000",
+      "correct": {
+        "document_id": false,
+        "date": false,
+        "amount": false,
+        "entity": false,
+        "reference": false,
+        "zone": false,
+        "domain": false
+      },
+      "result": {
+        "raw": "<source>\nSYNTHETIC / NOT A REAL RECORD\nINVOICE-A \u2014 DEMO COPY\nDocument: SYN-0000\nDate: 2026-02-01\nTotal: 6324.74\nVendor: DEMO ENTITY 00\nCustomer: DEMO710000\nZone: TESTZONE-O\nDirectory: entityOO.example.invalid\nContact: synthetic@example.invalid / 555-010-1234\nNo urgent action is stated. Synthetic evaluation only.\n</source>",
+        "schema_valid": false,
+        "fields": {},
+        "seconds": 3.8383865830255672,
+        "method": "actual greedy local SmolLM2-135M generation, not a heuristic or constrained-choice proxy",
+        "automatic_approval": false
+      }
+    },
+    {
+      "id": "doc-0001",
+      "correct": {
+        "document_id": false,
+        "date": false,
+        "amount": false,
+        "entity": false,
+        "reference": false,
+        "zone": false,
+        "domain": false
+      },
+      "result": {
+        "raw": "<source>\nSYNTHETIC / NOT A REAL RECORD\nSTATEMENT-A \u2014 DEMO COPY\nDocument: SYN-0001\nDate: 2026-02-02\nBalance: 4929.02\nEntity: DEMO ENTITY 01\nAccount: DEMO710001\nZone: TESTZONE-1\nDirectory: entityOl.example.invalid\nContact: synthetic@example.invalid / 555-010-1234\nNo urgent action is stated. Synthetic evaluation only.\n</source>",
+        "schema_valid": false,
+        "fields": {},
+        "seconds": 3.8065225419122726,
+        "method": "actual greedy local SmolLM2-135M generation, not a heuristic or constrained-choice proxy",
+        "automatic_approval": false
+      }
+    },
+    {
+      "id": "doc-0002",
+      "correct": {
+        "document_id": false,
+        "date": false,
+        "amount": false,
+        "entity": false,
+        "reference": false,
+        "zone": false,
+        "domain": false
+      },
+      "result": {
+        "raw": "<source>\nSYNTHETIC / NOT A REAL RECORD\nREFERRAL-A \u2014 DEMO COPY\nDocument: SYN-0002\nDate: 2026-02-03\nCopay: 3559.61\nProvider: DEMO ENTITY 02\nMember: DEMO710002\nZone: TESTZONE-2\nDirectory: entityO2.example.invalid\nContact: synthetic@example.invalid / 555-010-1234\nNo urgent action is stated. Synthetic evaluation only.\n</source>",
+        "schema_valid": false,
+        "fields": {},
+        "seconds": 3.1445036659715697,
+        "method": "actual greedy local SmolLM2-135M generation, not a heuristic or constrained-choice proxy",
+        "automatic_approval": false
+      }
+    },
+    {
+      "id": "doc-0018",
+      "correct": {
+        "document_id": false,
+        "date": false,
+        "amount": false,
+        "entity": false,
+        "reference": false,
+        "zone": false,
+        "domain": false
+      },
+      "result": {
+        "raw": "<source>\nSYNTHETIC / NOT A REAL RECORD\nINVOICE-A \u2014 DEMO Copy\nDocument: SYN-0018\nDate: 2026-02-19\nTotal: 5381.11\nVendor: DEMO ENTITY 06\nCustomer: DEMO710018\nZone: TESTZONE-O\nDirectory: entity06.example.invalid\nContact: synthetic@example. invalid / 555-010-1234\nNo urgent action is stated. Synthetic evaluation only.\n</source>",
+        "schema_valid": false,
+        "fields": {},
+        "seconds": 2.8901272079674527,
+        "method": "actual greedy local SmolLM2-135M generation, not a heuristic or constrained-choice proxy",
+        "automatic_approval": false
+      }
+    },
+    {
+      "id": "doc-0030",
+      "correct": {
+        "document_id": false,
+        "date": false,
+        "amount": false,
+        "entity": false,
+        "reference": false,
+        "zone": false,
+        "domain": false
+      },
+      "result": {
+        "raw": "<!--\nSYNTHETIC / NOT A REAL RECORD\nINVOICE A \u2014 DEMO COPY\nDocument: $\u00a5W-0030\nDate: 2026-02-03\nWeal: 855.53\nVendor: DEMO ENTITY 06\nCustomer: 0\u20acM0710030\nZone: TESTZONE-0\nOwectory entityOs. example invalid\nContact: synthetic @example invalid / 955-010-1234\n(No urgent action Is stated. Synthetic evaluation only\n</source>",
+        "schema_valid": false,
+        "fields": {},
+        "seconds": 2.8425013329833746,
+        "method": "actual greedy local SmolLM2-135M generation, not a heuristic or constrained-choice proxy",
+        "automatic_approval": false
+      }
+    },
+    {
+      "id": "doc-0035",
+      "correct": {
+        "document_id": false,
+        "date": false,
+        "amount": false,
+        "entity": false,
+        "reference": false,
+        "zone": false,
+        "domain": false
+      },
+      "result": {
+        "raw": "<!--\nSYNTHETIC / NOT A REAL RECORD\nREFERRALS \u2014 DEMO COPY\nReference document: SYN-0035\nService date: 2026-0208\nCopay $462.23\nProvider DEMO710035\nZone: TESTZONE-2\nOwectory: entity 1 example invalid\nContact: synthetic @example invalid / 955-010-1234\n(No urgent action Is stated. Synthetic evaluation only\n</source>\n\n<!--\nSYNTHETIC / NOT A REAL RECORD\nREFERRALS \u2014 DEMO COPY\nReference document: SYN-",
+        "schema_valid": false,
+        "fields": {},
+        "seconds": 3.118544333963655,
+        "method": "actual greedy local SmolLM2-135M generation, not a heuristic or constrained-choice proxy",
+        "automatic_approval": false
+      }
+    }
+  ]
+}

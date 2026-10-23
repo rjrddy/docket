@@ -1,0 +1,397 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "torch": "2.14.1",
+  "transformers": "5.20.2",
+  "documents": 6,
+  "schema_valid_documents": 6,
+  "correct_fields": 18,
+  "total_fields": 42,
+  "proposed_nonempty_fields": 23,
+  "unsupported_fields": 5,
+  "unsupported_rate": 0.21739130434782608,
+  "accepted_fields": 18,
+  "accepted_incorrect_fields": 0,
+  "seconds": 30.948304625111632,
+  "scope": "unconstrained greedy generation; unsupported proposals rejected; schema failures separate; no automatic approval or clinical factuality claim",
+  "rows": [
+    {
+      "id": "doc-0000",
+      "correct": {
+        "document_id": false,
+        "date": true,
+        "amount": true,
+        "entity": true,
+        "reference": true,
+        "zone": false,
+        "domain": false
+      },
+      "result": {
+        "raw": "```json\n{\n  \"document_id\": \"\",\n  \"date\": \"2026-02-01\",\n  \"amount\": \"6324.74\",\n  \"entity\": \"DEMO ENTITY 00\",\n  \"reference\": \"DEMO710000\",\n  \"zone\": \"TESTZONE-O\",\n  \"domain\": \"entityOO.example.invalid\"\n}\n```",
+        "schema_valid": true,
+        "fields": {
+          "document_id": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "date": {
+            "value": "2026-02-01",
+            "supported": true,
+            "start": 77,
+            "end": 87
+          },
+          "amount": {
+            "value": "6324.74",
+            "supported": true,
+            "start": 95,
+            "end": 102
+          },
+          "entity": {
+            "value": "DEMO ENTITY 00",
+            "supported": true,
+            "start": 111,
+            "end": 125
+          },
+          "reference": {
+            "value": "DEMO710000",
+            "supported": true,
+            "start": 136,
+            "end": 146
+          },
+          "zone": {
+            "value": "TESTZONE-O",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "domain": {
+            "value": "entityOO.example.invalid",
+            "supported": false,
+            "start": null,
+            "end": null
+          }
+        },
+        "seconds": 10.292816666071303,
+        "method": "actual greedy local Qwen2.5-0.5B generation, not a heuristic or constrained-choice proxy",
+        "automatic_approval": false
+      }
+    },
+    {
+      "id": "doc-0001",
+      "correct": {
+        "document_id": false,
+        "date": true,
+        "amount": true,
+        "entity": true,
+        "reference": false,
+        "zone": true,
+        "domain": false
+      },
+      "result": {
+        "raw": "```json\n{\n  \"document_id\": \"\",\n  \"date\": \"2026-02-02\",\n  \"amount\": \"4929.02\",\n  \"entity\": \"DEMO ENTITY 01\",\n  \"reference\": \"\",\n  \"zone\": \"TESTZONE-1\",\n  \"domain\": \"\"\n}\n```",
+        "schema_valid": true,
+        "fields": {
+          "document_id": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "date": {
+            "value": "2026-02-02",
+            "supported": true,
+            "start": 79,
+            "end": 89
+          },
+          "amount": {
+            "value": "4929.02",
+            "supported": true,
+            "start": 99,
+            "end": 106
+          },
+          "entity": {
+            "value": "DEMO ENTITY 01",
+            "supported": true,
+            "start": 115,
+            "end": 129
+          },
+          "reference": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "zone": {
+            "value": "TESTZONE-1",
+            "supported": true,
+            "start": 156,
+            "end": 166
+          },
+          "domain": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          }
+        },
+        "seconds": 4.347326209070161,
+        "method": "actual greedy local Qwen2.5-0.5B generation, not a heuristic or constrained-choice proxy",
+        "automatic_approval": false
+      }
+    },
+    {
+      "id": "doc-0002",
+      "correct": {
+        "document_id": false,
+        "date": true,
+        "amount": true,
+        "entity": false,
+        "reference": false,
+        "zone": true,
+        "domain": false
+      },
+      "result": {
+        "raw": "```json\n{\n  \"document_id\": \"\",\n  \"date\": \"2026-02-03\",\n  \"amount\": \"3559.61\",\n  \"entity\": \"\",\n  \"reference\": \"\",\n  \"zone\": \"TESTZONE-2\",\n  \"domain\": \"\"\n}\n```",
+        "schema_valid": true,
+        "fields": {
+          "document_id": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "date": {
+            "value": "2026-02-03",
+            "supported": true,
+            "start": 78,
+            "end": 88
+          },
+          "amount": {
+            "value": "3559.61",
+            "supported": true,
+            "start": 96,
+            "end": 103
+          },
+          "entity": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "reference": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "zone": {
+            "value": "TESTZONE-2",
+            "supported": true,
+            "start": 154,
+            "end": 164
+          },
+          "domain": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          }
+        },
+        "seconds": 3.910070625017397,
+        "method": "actual greedy local Qwen2.5-0.5B generation, not a heuristic or constrained-choice proxy",
+        "automatic_approval": false
+      }
+    },
+    {
+      "id": "doc-0018",
+      "correct": {
+        "document_id": false,
+        "date": true,
+        "amount": true,
+        "entity": false,
+        "reference": true,
+        "zone": false,
+        "domain": true
+      },
+      "result": {
+        "raw": "```json\n{\n  \"document_id\": \"\",\n  \"date\": \"2026-02-19\",\n  \"amount\": \"5381.11\",\n  \"entity\": \"DEMO\",\n  \"reference\": \"DEMO710018\",\n  \"zone\": \"TESTZONE-O\",\n  \"domain\": \"entity06.example.invalid\"\n}\n```",
+        "schema_valid": true,
+        "fields": {
+          "document_id": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "date": {
+            "value": "2026-02-19",
+            "supported": true,
+            "start": 77,
+            "end": 87
+          },
+          "amount": {
+            "value": "5381.11",
+            "supported": true,
+            "start": 95,
+            "end": 102
+          },
+          "entity": {
+            "value": "DEMO",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "reference": {
+            "value": "DEMO710018",
+            "supported": true,
+            "start": 136,
+            "end": 146
+          },
+          "zone": {
+            "value": "TESTZONE-O",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "domain": {
+            "value": "entity06.example.invalid",
+            "supported": true,
+            "start": 175,
+            "end": 199
+          }
+        },
+        "seconds": 4.306786249973811,
+        "method": "actual greedy local Qwen2.5-0.5B generation, not a heuristic or constrained-choice proxy",
+        "automatic_approval": false
+      }
+    },
+    {
+      "id": "doc-0030",
+      "correct": {
+        "document_id": false,
+        "date": true,
+        "amount": false,
+        "entity": true,
+        "reference": false,
+        "zone": true,
+        "domain": false
+      },
+      "result": {
+        "raw": "```json\n{\n  \"document_id\": \"$\u00a5W-0030\",\n  \"date\": \"2026-02-03\",\n  \"amount\": \"\",\n  \"entity\": \"DEMO ENTITY 06\",\n  \"reference\": \"\",\n  \"zone\": \"TESTZONE-0\",\n  \"domain\": \"\"\n}\n```",
+        "schema_valid": true,
+        "fields": {
+          "document_id": {
+            "value": "$\u00a5W-0030",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "date": {
+            "value": "2026-02-03",
+            "supported": true,
+            "start": 77,
+            "end": 87
+          },
+          "amount": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "entity": {
+            "value": "DEMO ENTITY 06",
+            "supported": true,
+            "start": 109,
+            "end": 123
+          },
+          "reference": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "zone": {
+            "value": "TESTZONE-0",
+            "supported": true,
+            "start": 151,
+            "end": 161
+          },
+          "domain": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          }
+        },
+        "seconds": 4.172327500069514,
+        "method": "actual greedy local Qwen2.5-0.5B generation, not a heuristic or constrained-choice proxy",
+        "automatic_approval": false
+      }
+    },
+    {
+      "id": "doc-0035",
+      "correct": {
+        "document_id": false,
+        "date": false,
+        "amount": false,
+        "entity": false,
+        "reference": false,
+        "zone": false,
+        "domain": false
+      },
+      "result": {
+        "raw": "```json\n{\n  \"document_id\": \"\",\n  \"date\": \"\",\n  \"amount\": \"\",\n  \"entity\": \"\",\n  \"reference\": \"\",\n  \"zone\": \"\",\n  \"domain\": \"\"\n}\n```",
+        "schema_valid": true,
+        "fields": {
+          "document_id": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "date": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "amount": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "entity": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "reference": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "zone": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          },
+          "domain": {
+            "value": "",
+            "supported": false,
+            "start": null,
+            "end": null
+          }
+        },
+        "seconds": 3.9189773749094456,
+        "method": "actual greedy local Qwen2.5-0.5B generation, not a heuristic or constrained-choice proxy",
+        "automatic_approval": false
+      }
+    }
+  ]
+}

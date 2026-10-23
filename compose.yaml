@@ -1,0 +1,26 @@
+services:
+  postgres:
+    image: postgres:17-bookworm
+    environment:
+      POSTGRES_DB: docket
+      POSTGRES_PASSWORD: synthetic-local-db-password
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U postgres -d docket']
+      interval: 2s
+      timeout: 3s
+      retries: 30
+    volumes: [database:/var/lib/postgresql/data]
+  docket:
+    build: .
+    environment:
+      DATABASE_URL: postgresql://postgres:synthetic-local-db-password@postgres:5432/docket
+      DOCKET_REVIEW_TOKEN: ${DOCKET_REVIEW_TOKEN:-synthetic-local-review-key-0001}
+      DOCKET_VIEW_TOKEN: ${DOCKET_VIEW_TOKEN:-synthetic-local-viewer-key-0001}
+    ports: ['127.0.0.1:8096:8096']
+    volumes: [sources:/app/.cache]
+    depends_on:
+      postgres:
+        condition: service_healthy
+volumes:
+  database:
+  sources:

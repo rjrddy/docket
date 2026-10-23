@@ -1,0 +1,47 @@
+Collecting torch==2.14.1 (from -r requirements-model.txt (line 1))
+  Using cached torch-2.14.1-cp313-cp313-macosx_14_0_arm64.whl.metadata (39 kB)
+Collecting transformers==5.20.2 (from -r requirements-model.txt (line 2))
+  Using cached transformers-5.20.2-py3-none-any.whl.metadata (31 kB)
+Collecting safetensors==0.7.0 (from -r requirements-model.txt (line 3))
+  Downloading safetensors-0.7.0-cp38-abi3-macosx_11_0_arm64.whl.metadata (4.1 kB)
+Requirement already satisfied: filelock in ./.venv/lib/python3.13/site-packages (from torch==2.14.1->-r requirements-model.txt (line 1)) (4.2.4)
+Collecting typing-extensions>=4.10.0 (from torch==2.14.1->-r requirements-model.txt (line 1))
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting setuptools>=77.0.3 (from torch==2.14.1->-r requirements-model.txt (line 1))
+  Using cached setuptools-84.2.1-py3-none-any.whl.metadata (6.6 kB)
+Collecting sympy>=1.13.3 (from torch==2.14.1->-r requirements-model.txt (line 1))
+  Using cached sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting networkx>=2.5.1 (from torch==2.14.1->-r requirements-model.txt (line 1))
+  Using cached networkx-3.7-py3-none-any.whl.metadata (6.7 kB)
+Collecting jinja2 (from torch==2.14.1->-r requirements-model.txt (line 1))
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting fsspec>=0.8.5 (from torch==2.14.1->-r requirements-model.txt (line 1))
+  Using cached fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+Collecting huggingface-hub<3.0,>=1.31.0 (from transformers==5.20.2->-r requirements-model.txt (line 2))
+  Downloading huggingface_hub-2.3.0-py3-none-any.whl.metadata (16 kB)
+Collecting numpy>=1.17 (from transformers==5.20.2->-r requirements-model.txt (line 2))
+  Using cached numpy-2.5.4-cp313-cp313-macosx_14_0_arm64.whl.metadata (6.6 kB)
+Requirement already satisfied: packaging>=20.0 in ./.venv/lib/python3.13/site-packages (from transformers==5.20.2->-r requirements-model.txt (line 2)) (26.3)
+Collecting pyyaml>=5.1 (from transformers==5.20.2->-r requirements-model.txt (line 2))
+  Using cached pyyaml-6.0.3-cp313-cp313-macosx_11_0_arm64.whl.metadata (2.4 kB)
+Collecting regex>=2025.10.22 (from transformers==5.20.2->-r requirements-model.txt (line 2))
+  Using cached regex-2026.9.29-cp313-cp313-macosx_11_0_arm64.whl.metadata (40 kB)
+Collecting tokenizers<0.24.0,>=0.23.1 (from transformers==5.20.2->-r requirements-model.txt (line 2))
+  Using cached tokenizers-0.23.3-cp310-abi3-macosx_11_0_arm64.whl.metadata (9.8 kB)
+Collecting typer (from transformers==5.20.2->-r requirements-model.txt (line 2))
+  Using cached typer-0.27.3-py3-none-any.whl.metadata (16 kB)
+INFO: pip is looking at multiple versions of transformers to determine which version is compatible with other requirements. This could take a while.
+ERROR: Cannot install -r requirements-model.txt (line 2) and safetensors==0.7.0 because these package versions have conflicting dependencies.
+
+The conflict is caused by:
+    The user requested safetensors==0.7.0
+    transformers 5.20.2 depends on safetensors>=0.8.0
+
+Additionally, some packages in these conflicts have no matching distributions available for your environment:
+    safetensors
+
+To fix this you could try to:
+1. loosen the range of package versions you've specified
+2. remove package versions to allow pip to attempt to solve the dependency conflict
+
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts

@@ -1,0 +1,138 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "torch": "2.14.1",
+  "transformers": "5.20.2",
+  "documents": 6,
+  "schema_valid_documents": 0,
+  "correct_fields": 0,
+  "total_fields": 42,
+  "proposed_nonempty_fields": 0,
+  "unsupported_fields": 0,
+  "unsupported_rate": null,
+  "accepted_unsupported_fields": 0,
+  "seconds": 25.970424958737567,
+  "scope": "unconstrained greedy generation; unsupported proposals rejected; schema failures separate; no automatic approval or clinical factuality claim",
+  "rows": [
+    {
+      "id": "doc-0000",
+      "correct": {
+        "document_id": false,
+        "date": false,
+        "amount": false,
+        "entity": false,
+        "reference": false,
+        "zone": false,
+        "domain": false
+      },
+      "result": {
+        "raw": "```json\n{\n  \"document_id\": \"\",\n  \"date\": \"2026-02-01\",\n  \"amount\": \"6324.74\",\n  \"entity\": \"DEMO ENTITY 00\",\n  \"reference\": \"DEMO710000\",\n  \"zone\": \"TESTZONE-O\",\n  \"domain\": \"entityOO.example.invalid\"\n}\n```",
+        "schema_valid": false,
+        "fields": {},
+        "seconds": 4.797767416923307,
+        "method": "actual greedy local Qwen2.5-0.5B generation, not a heuristic or constrained-choice proxy",
+        "automatic_approval": false
+      }
+    },
+    {
+      "id": "doc-0001",
+      "correct": {
+        "document_id": false,
+        "date": false,
+        "amount": false,
+        "entity": false,
+        "reference": false,
+        "zone": false,
+        "domain": false
+      },
+      "result": {
+        "raw": "```json\n{\n  \"document_id\": \"\",\n  \"date\": \"2026-02-02\",\n  \"amount\": \"4929.02\",\n  \"entity\": \"DEMO ENTITY 01\",\n  \"reference\": \"\",\n  \"zone\": \"TESTZONE-1\",\n  \"domain\": \"\"\n}\n```",
+        "schema_valid": false,
+        "fields": {},
+        "seconds": 4.044273749925196,
+        "method": "actual greedy local Qwen2.5-0.5B generation, not a heuristic or constrained-choice proxy",
+        "automatic_approval": false
+      }
+    },
+    {
+      "id": "doc-0002",
+      "correct": {
+        "document_id": false,
+        "date": false,
+        "amount": false,
+        "entity": false,
+        "reference": false,
+        "zone": false,
+        "domain": false
+      },
+      "result": {
+        "raw": "```json\n{\n  \"document_id\": \"\",\n  \"date\": \"2026-02-03\",\n  \"amount\": \"3559.61\",\n  \"entity\": \"\",\n  \"reference\": \"\",\n  \"zone\": \"TESTZONE-2\",\n  \"domain\": \"\"\n}\n```",
+        "schema_valid": false,
+        "fields": {},
+        "seconds": 3.858777791960165,
+        "method": "actual greedy local Qwen2.5-0.5B generation, not a heuristic or constrained-choice proxy",
+        "automatic_approval": false
+      }
+    },
+    {
+      "id": "doc-0018",
+      "correct": {
+        "document_id": false,
+        "date": false,
+        "amount": false,
+        "entity": false,
+        "reference": false,
+        "zone": false,
+        "domain": false
+      },
+      "result": {
+        "raw": "```json\n{\n  \"document_id\": \"\",\n  \"date\": \"2026-02-19\",\n  \"amount\": \"5381.11\",\n  \"entity\": \"DEMO\",\n  \"reference\": \"DEMO710018\",\n  \"zone\": \"TESTZONE-O\",\n  \"domain\": \"entity06.example.invalid\"\n}\n```",
+        "schema_valid": false,
+        "fields": {},
+        "seconds": 5.581756457919255,
+        "method": "actual greedy local Qwen2.5-0.5B generation, not a heuristic or constrained-choice proxy",
+        "automatic_approval": false
+      }
+    },
+    {
+      "id": "doc-0030",
+      "correct": {
+        "document_id": false,
+        "date": false,
+        "amount": false,
+        "entity": false,
+        "reference": false,
+        "zone": false,
+        "domain": false
+      },
+      "result": {
+        "raw": "```json\n{\n  \"document_id\": \"$\u00a5W-0030\",\n  \"date\": \"2026-02-03\",\n  \"amount\": \"\",\n  \"entity\": \"DEMO ENTITY 06\",\n  \"reference\": \"\",\n  \"zone\": \"TESTZONE-0\",\n  \"domain\": \"\"\n}\n```",
+        "schema_valid": false,
+        "fields": {},
+        "seconds": 4.441177334054373,
+        "method": "actual greedy local Qwen2.5-0.5B generation, not a heuristic or constrained-choice proxy",
+        "automatic_approval": false
+      }
+    },
+    {
+      "id": "doc-0035",
+      "correct": {
+        "document_id": false,
+        "date": false,
+        "amount": false,
+        "entity": false,
+        "reference": false,
+        "zone": false,
+        "domain": false
+      },
+      "result": {
+        "raw": "```json\n{\n  \"document_id\": \"\",\n  \"date\": \"\",\n  \"amount\": \"\",\n  \"entity\": \"\",\n  \"reference\": \"\",\n  \"zone\": \"\",\n  \"domain\": \"\"\n}\n```",
+        "schema_valid": false,
+        "fields": {},
+        "seconds": 3.246672207955271,
+        "method": "actual greedy local Qwen2.5-0.5B generation, not a heuristic or constrained-choice proxy",
+        "automatic_approval": false
+      }
+    }
+  ]
+}

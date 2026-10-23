@@ -1,0 +1,187 @@
+.venv/bin/ruff check src scripts tests
+All checks passed!
+.venv/bin/ruff format --check src scripts tests
+20 files already formatted
+npm run lint --prefix apps/web
+
+> docket-reading-room@0.1.0 lint
+> tsc --noEmit && prettier --check src index.html package.json tsconfig.json
+
+Checking formatting...
+All matched files use Prettier code style!
+.venv/bin/python scripts/local.py test
+.....s.....                                                              [100%]
+10 passed, 1 skipped in 5.26s
+.venv/bin/python scripts/local.py bench
+{
+  "scope": "synthetic rendered PNGs, actual Tesseract OCR; confidence is uncalibrated; scripted truth-assisted review, NOT independent human review",
+  "documents": 36,
+  "fields_per_document": 7,
+  "ocr_seconds": 9.450446791946888,
+  "tesseract": "tesseract 5.5.0",
+  "field_accuracy": {
+    "document_id": 0.8611111111111112,
+    "date": 0.9722222222222222,
+    "amount": 0.9166666666666666,
+    "entity": 0.9722222222222222,
+    "reference": 0.8055555555555556,
+    "zone": 0.7777777777777778,
+    "domain": 0.4444444444444444
+  },
+  "exact_documents": 11,
+  "curve": [
+    {
+      "threshold": 0,
+      "auto_count": 11,
+      "auto_rate": 0.3055555555555556,
+      "auto_error_rate": 0.0
+    },
+    {
+      "threshold": 0.5,
+      "auto_count": 8,
+      "auto_rate": 0.2222222222222222,
+      "auto_error_rate": 0.0
+    },
+    {
+      "threshold": 0.8,
+      "auto_count": 4,
+      "auto_rate": 0.1111111111111111,
+      "auto_error_rate": 0.0
+    },
+    {
+      "threshold": 0.9,
+      "auto_count": 0,
+      "auto_rate": 0.0,
+      "auto_error_rate": null
+    },
+    {
+      "threshold": 0.93,
+      "auto_count": 0,
+      "auto_rate": 0.0,
+      "auto_error_rate": null
+    },
+    {
+      "threshold": 0.95,
+      "auto_count": 0,
+      "auto_rate": 0.0,
+      "auto_error_rate": null
+    },
+    {
+      "threshold": 0.99,
+      "auto_count": 0,
+      "auto_rate": 0.0,
+      "auto_error_rate": null
+    }
+  ],
+  "reviews": [
+    {
+      "id": "doc-0000",
+      "before_correct_fields": 5,
+      "after_correct_fields": 7,
+      "revision": 2
+    },
+    {
+      "id": "doc-0001",
+      "before_correct_fields": 6,
+      "after_correct_fields": 7,
+      "revision": 2
+    },
+    {
+      "id": "doc-0002",
+      "before_correct_fields": 6,
+      "after_correct_fields": 7,
+      "revision": 2
+    },
+    {
+      "id": "doc-0003",
+      "before_correct_fields": 5,
+      "after_correct_fields": 7,
+      "revision": 2
+    },
+    {
+      "id": "doc-0004",
+      "before_correct_fields": 6,
+      "after_correct_fields": 7,
+      "revision": 2
+    },
+    {
+      "id": "doc-0005",
+      "before_correct_fields": 6,
+      "after_correct_fields": 7,
+      "revision": 2
+    },
+    {
+      "id": "doc-0008",
+      "before_correct_fields": 6,
+      "after_correct_fields": 7,
+      "revision": 2
+    },
+    {
+      "id": "doc-0011",
+      "before_correct_fields": 6,
+      "after_correct_fields": 7,
+      "revision": 2
+    }
+  ],
+  "review_before_correct_fields": 46,
+  "review_after_correct_fields": 56,
+  "review_fields": 56,
+  "matching_curve": [
+    {
+      "threshold": 0.5,
+      "tp": 12,
+      "fp": 92,
+      "fn": 0,
+      "precision": 0.11538461538461539,
+      "recall": 1.0
+    },
+    {
+      "threshold": 0.7,
+      "tp": 12,
+      "fp": 18,
+      "fn": 0,
+      "precision": 0.4,
+      "recall": 1.0
+    },
+    {
+      "threshold": 0.8,
+      "tp": 9,
+      "fp": 0,
+      "fn": 3,
+      "precision": 1.0,
+      "recall": 0.75
+    },
+    {
+      "threshold": 0.9,
+      "tp": 9,
+      "fp": 0,
+      "fn": 3,
+      "precision": 1.0,
+      "recall": 0.75
+    },
+    {
+      "threshold": 0.95,
+      "tp": 9,
+      "fp": 0,
+      "fn": 3,
+      "precision": 1.0,
+      "recall": 0.75
+    },
+    {
+      "threshold": 0.99,
+      "tp": 6,
+      "fp": 0,
+      "fn": 6,
+      "precision": 1.0,
+      "recall": 0.5
+    }
+  ],
+  "matching_pairs": 144,
+  "pipeline_entity_top1": 0.9722222222222222,
+  "negative_control_unsupported_rate": 0.6,
+  "redaction_sentinels": 5,
+  "redaction_leaks": 0,
+  "raw_log_payload_rejected": true
+}
+.venv/bin/python scripts/render_readme.py
+Generated README.md and RESULTS.md from retained OCR/model run JSON

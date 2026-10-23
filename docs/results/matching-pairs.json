@@ -1,0 +1,2306 @@
+[
+  {
+    "left": {
+      "id": 0,
+      "entity": "DEMO ENTITY 00",
+      "zone": "TESTZONE-0",
+      "domain": "entity00.example.invalid"
+    },
+    "right": {
+      "id": 0,
+      "entity": "DEMO ENTTY 00",
+      "zone": "TESTZONE-0",
+      "domain": "changed.example.invalid"
+    },
+    "match": true,
+    "score": 0.7296296296296296
+  },
+  {
+    "left": {
+      "id": 0,
+      "entity": "DEMO ENTITY 00",
+      "zone": "TESTZONE-0",
+      "domain": "entity00.example.invalid"
+    },
+    "right": {
+      "id": 1,
+      "entity": "DEMO ENTITY 01",
+      "zone": "TESTZONE-1",
+      "domain": "entity01.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 0,
+      "entity": "DEMO ENTITY 00",
+      "zone": "TESTZONE-0",
+      "domain": "entity00.example.invalid"
+    },
+    "right": {
+      "id": 2,
+      "entity": "DEMO ENTITY 02",
+      "zone": "TESTZONE-2",
+      "domain": "entity02.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 0,
+      "entity": "DEMO ENTITY 00",
+      "zone": "TESTZONE-0",
+      "domain": "entity00.example.invalid"
+    },
+    "right": {
+      "id": 3,
+      "entity": "DEMO ENTTY 03",
+      "zone": "TESTZONE-0",
+      "domain": "entity03.example.invalid"
+    },
+    "match": false,
+    "score": 0.6888888888888889
+  },
+  {
+    "left": {
+      "id": 0,
+      "entity": "DEMO ENTITY 00",
+      "zone": "TESTZONE-0",
+      "domain": "entity00.example.invalid"
+    },
+    "right": {
+      "id": 4,
+      "entity": "DEMO ENTITY 04",
+      "zone": "TESTZONE-1",
+      "domain": "entity04.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 0,
+      "entity": "DEMO ENTITY 00",
+      "zone": "TESTZONE-0",
+      "domain": "entity00.example.invalid"
+    },
+    "right": {
+      "id": 5,
+      "entity": "DEMO ENTITY 05",
+      "zone": "TESTZONE-2",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 0,
+      "entity": "DEMO ENTITY 00",
+      "zone": "TESTZONE-0",
+      "domain": "entity00.example.invalid"
+    },
+    "right": {
+      "id": 6,
+      "entity": "DEMO ENTTY 06",
+      "zone": "TESTZONE-0",
+      "domain": "entity06.example.invalid"
+    },
+    "match": false,
+    "score": 0.6888888888888889
+  },
+  {
+    "left": {
+      "id": 0,
+      "entity": "DEMO ENTITY 00",
+      "zone": "TESTZONE-0",
+      "domain": "entity00.example.invalid"
+    },
+    "right": {
+      "id": 7,
+      "entity": "DEMO ENTITY 07",
+      "zone": "TESTZONE-1",
+      "domain": "entity07.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 0,
+      "entity": "DEMO ENTITY 00",
+      "zone": "TESTZONE-0",
+      "domain": "entity00.example.invalid"
+    },
+    "right": {
+      "id": 8,
+      "entity": "DEMO ENTITY 08",
+      "zone": "TESTZONE-2",
+      "domain": "entity08.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 0,
+      "entity": "DEMO ENTITY 00",
+      "zone": "TESTZONE-0",
+      "domain": "entity00.example.invalid"
+    },
+    "right": {
+      "id": 9,
+      "entity": "DEMO ENTTY 09",
+      "zone": "TESTZONE-0",
+      "domain": "entity09.example.invalid"
+    },
+    "match": false,
+    "score": 0.6888888888888889
+  },
+  {
+    "left": {
+      "id": 0,
+      "entity": "DEMO ENTITY 00",
+      "zone": "TESTZONE-0",
+      "domain": "entity00.example.invalid"
+    },
+    "right": {
+      "id": 10,
+      "entity": "DEMO ENTITY 10",
+      "zone": "TESTZONE-1",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 0,
+      "entity": "DEMO ENTITY 00",
+      "zone": "TESTZONE-0",
+      "domain": "entity00.example.invalid"
+    },
+    "right": {
+      "id": 11,
+      "entity": "DEMO ENTITY 11",
+      "zone": "TESTZONE-2",
+      "domain": "entity11.example.invalid"
+    },
+    "match": false,
+    "score": 0.4714285714285714
+  },
+  {
+    "left": {
+      "id": 1,
+      "entity": "DEMO ENTITY 01",
+      "zone": "TESTZONE-1",
+      "domain": "entity01.example.invalid"
+    },
+    "right": {
+      "id": 0,
+      "entity": "DEMO ENTTY 00",
+      "zone": "TESTZONE-0",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 1,
+      "entity": "DEMO ENTITY 01",
+      "zone": "TESTZONE-1",
+      "domain": "entity01.example.invalid"
+    },
+    "right": {
+      "id": 1,
+      "entity": "DEMO ENTITY 01",
+      "zone": "TESTZONE-1",
+      "domain": "entity01.example.invalid"
+    },
+    "match": true,
+    "score": 1.0
+  },
+  {
+    "left": {
+      "id": 1,
+      "entity": "DEMO ENTITY 01",
+      "zone": "TESTZONE-1",
+      "domain": "entity01.example.invalid"
+    },
+    "right": {
+      "id": 2,
+      "entity": "DEMO ENTITY 02",
+      "zone": "TESTZONE-2",
+      "domain": "entity02.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 1,
+      "entity": "DEMO ENTITY 01",
+      "zone": "TESTZONE-1",
+      "domain": "entity01.example.invalid"
+    },
+    "right": {
+      "id": 3,
+      "entity": "DEMO ENTTY 03",
+      "zone": "TESTZONE-0",
+      "domain": "entity03.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 1,
+      "entity": "DEMO ENTITY 01",
+      "zone": "TESTZONE-1",
+      "domain": "entity01.example.invalid"
+    },
+    "right": {
+      "id": 4,
+      "entity": "DEMO ENTITY 04",
+      "zone": "TESTZONE-1",
+      "domain": "entity04.example.invalid"
+    },
+    "match": false,
+    "score": 0.7107142857142859
+  },
+  {
+    "left": {
+      "id": 1,
+      "entity": "DEMO ENTITY 01",
+      "zone": "TESTZONE-1",
+      "domain": "entity01.example.invalid"
+    },
+    "right": {
+      "id": 5,
+      "entity": "DEMO ENTITY 05",
+      "zone": "TESTZONE-2",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 1,
+      "entity": "DEMO ENTITY 01",
+      "zone": "TESTZONE-1",
+      "domain": "entity01.example.invalid"
+    },
+    "right": {
+      "id": 6,
+      "entity": "DEMO ENTTY 06",
+      "zone": "TESTZONE-0",
+      "domain": "entity06.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 1,
+      "entity": "DEMO ENTITY 01",
+      "zone": "TESTZONE-1",
+      "domain": "entity01.example.invalid"
+    },
+    "right": {
+      "id": 7,
+      "entity": "DEMO ENTITY 07",
+      "zone": "TESTZONE-1",
+      "domain": "entity07.example.invalid"
+    },
+    "match": false,
+    "score": 0.7107142857142859
+  },
+  {
+    "left": {
+      "id": 1,
+      "entity": "DEMO ENTITY 01",
+      "zone": "TESTZONE-1",
+      "domain": "entity01.example.invalid"
+    },
+    "right": {
+      "id": 8,
+      "entity": "DEMO ENTITY 08",
+      "zone": "TESTZONE-2",
+      "domain": "entity08.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 1,
+      "entity": "DEMO ENTITY 01",
+      "zone": "TESTZONE-1",
+      "domain": "entity01.example.invalid"
+    },
+    "right": {
+      "id": 9,
+      "entity": "DEMO ENTTY 09",
+      "zone": "TESTZONE-0",
+      "domain": "entity09.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 1,
+      "entity": "DEMO ENTITY 01",
+      "zone": "TESTZONE-1",
+      "domain": "entity01.example.invalid"
+    },
+    "right": {
+      "id": 10,
+      "entity": "DEMO ENTITY 10",
+      "zone": "TESTZONE-1",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.7107142857142859
+  },
+  {
+    "left": {
+      "id": 1,
+      "entity": "DEMO ENTITY 01",
+      "zone": "TESTZONE-1",
+      "domain": "entity01.example.invalid"
+    },
+    "right": {
+      "id": 11,
+      "entity": "DEMO ENTITY 11",
+      "zone": "TESTZONE-2",
+      "domain": "entity11.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 2,
+      "entity": "DEMO ENTITY 02",
+      "zone": "TESTZONE-2",
+      "domain": "entity02.example.invalid"
+    },
+    "right": {
+      "id": 0,
+      "entity": "DEMO ENTTY 00",
+      "zone": "TESTZONE-0",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 2,
+      "entity": "DEMO ENTITY 02",
+      "zone": "TESTZONE-2",
+      "domain": "entity02.example.invalid"
+    },
+    "right": {
+      "id": 1,
+      "entity": "DEMO ENTITY 01",
+      "zone": "TESTZONE-1",
+      "domain": "entity01.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 2,
+      "entity": "DEMO ENTITY 02",
+      "zone": "TESTZONE-2",
+      "domain": "entity02.example.invalid"
+    },
+    "right": {
+      "id": 2,
+      "entity": "DEMO ENTITY 02",
+      "zone": "TESTZONE-2",
+      "domain": "entity02.example.invalid"
+    },
+    "match": true,
+    "score": 1.0
+  },
+  {
+    "left": {
+      "id": 2,
+      "entity": "DEMO ENTITY 02",
+      "zone": "TESTZONE-2",
+      "domain": "entity02.example.invalid"
+    },
+    "right": {
+      "id": 3,
+      "entity": "DEMO ENTTY 03",
+      "zone": "TESTZONE-0",
+      "domain": "entity03.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 2,
+      "entity": "DEMO ENTITY 02",
+      "zone": "TESTZONE-2",
+      "domain": "entity02.example.invalid"
+    },
+    "right": {
+      "id": 4,
+      "entity": "DEMO ENTITY 04",
+      "zone": "TESTZONE-1",
+      "domain": "entity04.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 2,
+      "entity": "DEMO ENTITY 02",
+      "zone": "TESTZONE-2",
+      "domain": "entity02.example.invalid"
+    },
+    "right": {
+      "id": 5,
+      "entity": "DEMO ENTITY 05",
+      "zone": "TESTZONE-2",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.7107142857142859
+  },
+  {
+    "left": {
+      "id": 2,
+      "entity": "DEMO ENTITY 02",
+      "zone": "TESTZONE-2",
+      "domain": "entity02.example.invalid"
+    },
+    "right": {
+      "id": 6,
+      "entity": "DEMO ENTTY 06",
+      "zone": "TESTZONE-0",
+      "domain": "entity06.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 2,
+      "entity": "DEMO ENTITY 02",
+      "zone": "TESTZONE-2",
+      "domain": "entity02.example.invalid"
+    },
+    "right": {
+      "id": 7,
+      "entity": "DEMO ENTITY 07",
+      "zone": "TESTZONE-1",
+      "domain": "entity07.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 2,
+      "entity": "DEMO ENTITY 02",
+      "zone": "TESTZONE-2",
+      "domain": "entity02.example.invalid"
+    },
+    "right": {
+      "id": 8,
+      "entity": "DEMO ENTITY 08",
+      "zone": "TESTZONE-2",
+      "domain": "entity08.example.invalid"
+    },
+    "match": false,
+    "score": 0.7107142857142859
+  },
+  {
+    "left": {
+      "id": 2,
+      "entity": "DEMO ENTITY 02",
+      "zone": "TESTZONE-2",
+      "domain": "entity02.example.invalid"
+    },
+    "right": {
+      "id": 9,
+      "entity": "DEMO ENTTY 09",
+      "zone": "TESTZONE-0",
+      "domain": "entity09.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 2,
+      "entity": "DEMO ENTITY 02",
+      "zone": "TESTZONE-2",
+      "domain": "entity02.example.invalid"
+    },
+    "right": {
+      "id": 10,
+      "entity": "DEMO ENTITY 10",
+      "zone": "TESTZONE-1",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 2,
+      "entity": "DEMO ENTITY 02",
+      "zone": "TESTZONE-2",
+      "domain": "entity02.example.invalid"
+    },
+    "right": {
+      "id": 11,
+      "entity": "DEMO ENTITY 11",
+      "zone": "TESTZONE-2",
+      "domain": "entity11.example.invalid"
+    },
+    "match": false,
+    "score": 0.6714285714285715
+  },
+  {
+    "left": {
+      "id": 3,
+      "entity": "DEMO ENTITY 03",
+      "zone": "TESTZONE-0",
+      "domain": "entity03.example.invalid"
+    },
+    "right": {
+      "id": 0,
+      "entity": "DEMO ENTTY 00",
+      "zone": "TESTZONE-0",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.6888888888888889
+  },
+  {
+    "left": {
+      "id": 3,
+      "entity": "DEMO ENTITY 03",
+      "zone": "TESTZONE-0",
+      "domain": "entity03.example.invalid"
+    },
+    "right": {
+      "id": 1,
+      "entity": "DEMO ENTITY 01",
+      "zone": "TESTZONE-1",
+      "domain": "entity01.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 3,
+      "entity": "DEMO ENTITY 03",
+      "zone": "TESTZONE-0",
+      "domain": "entity03.example.invalid"
+    },
+    "right": {
+      "id": 2,
+      "entity": "DEMO ENTITY 02",
+      "zone": "TESTZONE-2",
+      "domain": "entity02.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 3,
+      "entity": "DEMO ENTITY 03",
+      "zone": "TESTZONE-0",
+      "domain": "entity03.example.invalid"
+    },
+    "right": {
+      "id": 3,
+      "entity": "DEMO ENTTY 03",
+      "zone": "TESTZONE-0",
+      "domain": "entity03.example.invalid"
+    },
+    "match": true,
+    "score": 0.9796296296296296
+  },
+  {
+    "left": {
+      "id": 3,
+      "entity": "DEMO ENTITY 03",
+      "zone": "TESTZONE-0",
+      "domain": "entity03.example.invalid"
+    },
+    "right": {
+      "id": 4,
+      "entity": "DEMO ENTITY 04",
+      "zone": "TESTZONE-1",
+      "domain": "entity04.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 3,
+      "entity": "DEMO ENTITY 03",
+      "zone": "TESTZONE-0",
+      "domain": "entity03.example.invalid"
+    },
+    "right": {
+      "id": 5,
+      "entity": "DEMO ENTITY 05",
+      "zone": "TESTZONE-2",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 3,
+      "entity": "DEMO ENTITY 03",
+      "zone": "TESTZONE-0",
+      "domain": "entity03.example.invalid"
+    },
+    "right": {
+      "id": 6,
+      "entity": "DEMO ENTTY 06",
+      "zone": "TESTZONE-0",
+      "domain": "entity06.example.invalid"
+    },
+    "match": false,
+    "score": 0.6888888888888889
+  },
+  {
+    "left": {
+      "id": 3,
+      "entity": "DEMO ENTITY 03",
+      "zone": "TESTZONE-0",
+      "domain": "entity03.example.invalid"
+    },
+    "right": {
+      "id": 7,
+      "entity": "DEMO ENTITY 07",
+      "zone": "TESTZONE-1",
+      "domain": "entity07.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 3,
+      "entity": "DEMO ENTITY 03",
+      "zone": "TESTZONE-0",
+      "domain": "entity03.example.invalid"
+    },
+    "right": {
+      "id": 8,
+      "entity": "DEMO ENTITY 08",
+      "zone": "TESTZONE-2",
+      "domain": "entity08.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 3,
+      "entity": "DEMO ENTITY 03",
+      "zone": "TESTZONE-0",
+      "domain": "entity03.example.invalid"
+    },
+    "right": {
+      "id": 9,
+      "entity": "DEMO ENTTY 09",
+      "zone": "TESTZONE-0",
+      "domain": "entity09.example.invalid"
+    },
+    "match": false,
+    "score": 0.6888888888888889
+  },
+  {
+    "left": {
+      "id": 3,
+      "entity": "DEMO ENTITY 03",
+      "zone": "TESTZONE-0",
+      "domain": "entity03.example.invalid"
+    },
+    "right": {
+      "id": 10,
+      "entity": "DEMO ENTITY 10",
+      "zone": "TESTZONE-1",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 3,
+      "entity": "DEMO ENTITY 03",
+      "zone": "TESTZONE-0",
+      "domain": "entity03.example.invalid"
+    },
+    "right": {
+      "id": 11,
+      "entity": "DEMO ENTITY 11",
+      "zone": "TESTZONE-2",
+      "domain": "entity11.example.invalid"
+    },
+    "match": false,
+    "score": 0.4714285714285714
+  },
+  {
+    "left": {
+      "id": 4,
+      "entity": "DEMO ENTITY 04",
+      "zone": "TESTZONE-1",
+      "domain": "entity04.example.invalid"
+    },
+    "right": {
+      "id": 0,
+      "entity": "DEMO ENTTY 00",
+      "zone": "TESTZONE-0",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 4,
+      "entity": "DEMO ENTITY 04",
+      "zone": "TESTZONE-1",
+      "domain": "entity04.example.invalid"
+    },
+    "right": {
+      "id": 1,
+      "entity": "DEMO ENTITY 01",
+      "zone": "TESTZONE-1",
+      "domain": "entity01.example.invalid"
+    },
+    "match": false,
+    "score": 0.7107142857142859
+  },
+  {
+    "left": {
+      "id": 4,
+      "entity": "DEMO ENTITY 04",
+      "zone": "TESTZONE-1",
+      "domain": "entity04.example.invalid"
+    },
+    "right": {
+      "id": 2,
+      "entity": "DEMO ENTITY 02",
+      "zone": "TESTZONE-2",
+      "domain": "entity02.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 4,
+      "entity": "DEMO ENTITY 04",
+      "zone": "TESTZONE-1",
+      "domain": "entity04.example.invalid"
+    },
+    "right": {
+      "id": 3,
+      "entity": "DEMO ENTTY 03",
+      "zone": "TESTZONE-0",
+      "domain": "entity03.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 4,
+      "entity": "DEMO ENTITY 04",
+      "zone": "TESTZONE-1",
+      "domain": "entity04.example.invalid"
+    },
+    "right": {
+      "id": 4,
+      "entity": "DEMO ENTITY 04",
+      "zone": "TESTZONE-1",
+      "domain": "entity04.example.invalid"
+    },
+    "match": true,
+    "score": 1.0
+  },
+  {
+    "left": {
+      "id": 4,
+      "entity": "DEMO ENTITY 04",
+      "zone": "TESTZONE-1",
+      "domain": "entity04.example.invalid"
+    },
+    "right": {
+      "id": 5,
+      "entity": "DEMO ENTITY 05",
+      "zone": "TESTZONE-2",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 4,
+      "entity": "DEMO ENTITY 04",
+      "zone": "TESTZONE-1",
+      "domain": "entity04.example.invalid"
+    },
+    "right": {
+      "id": 6,
+      "entity": "DEMO ENTTY 06",
+      "zone": "TESTZONE-0",
+      "domain": "entity06.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 4,
+      "entity": "DEMO ENTITY 04",
+      "zone": "TESTZONE-1",
+      "domain": "entity04.example.invalid"
+    },
+    "right": {
+      "id": 7,
+      "entity": "DEMO ENTITY 07",
+      "zone": "TESTZONE-1",
+      "domain": "entity07.example.invalid"
+    },
+    "match": false,
+    "score": 0.7107142857142859
+  },
+  {
+    "left": {
+      "id": 4,
+      "entity": "DEMO ENTITY 04",
+      "zone": "TESTZONE-1",
+      "domain": "entity04.example.invalid"
+    },
+    "right": {
+      "id": 8,
+      "entity": "DEMO ENTITY 08",
+      "zone": "TESTZONE-2",
+      "domain": "entity08.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 4,
+      "entity": "DEMO ENTITY 04",
+      "zone": "TESTZONE-1",
+      "domain": "entity04.example.invalid"
+    },
+    "right": {
+      "id": 9,
+      "entity": "DEMO ENTTY 09",
+      "zone": "TESTZONE-0",
+      "domain": "entity09.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 4,
+      "entity": "DEMO ENTITY 04",
+      "zone": "TESTZONE-1",
+      "domain": "entity04.example.invalid"
+    },
+    "right": {
+      "id": 10,
+      "entity": "DEMO ENTITY 10",
+      "zone": "TESTZONE-1",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.7107142857142859
+  },
+  {
+    "left": {
+      "id": 4,
+      "entity": "DEMO ENTITY 04",
+      "zone": "TESTZONE-1",
+      "domain": "entity04.example.invalid"
+    },
+    "right": {
+      "id": 11,
+      "entity": "DEMO ENTITY 11",
+      "zone": "TESTZONE-2",
+      "domain": "entity11.example.invalid"
+    },
+    "match": false,
+    "score": 0.4714285714285714
+  },
+  {
+    "left": {
+      "id": 5,
+      "entity": "DEMO ENTITY 05",
+      "zone": "TESTZONE-2",
+      "domain": "entity05.example.invalid"
+    },
+    "right": {
+      "id": 0,
+      "entity": "DEMO ENTTY 00",
+      "zone": "TESTZONE-0",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 5,
+      "entity": "DEMO ENTITY 05",
+      "zone": "TESTZONE-2",
+      "domain": "entity05.example.invalid"
+    },
+    "right": {
+      "id": 1,
+      "entity": "DEMO ENTITY 01",
+      "zone": "TESTZONE-1",
+      "domain": "entity01.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 5,
+      "entity": "DEMO ENTITY 05",
+      "zone": "TESTZONE-2",
+      "domain": "entity05.example.invalid"
+    },
+    "right": {
+      "id": 2,
+      "entity": "DEMO ENTITY 02",
+      "zone": "TESTZONE-2",
+      "domain": "entity02.example.invalid"
+    },
+    "match": false,
+    "score": 0.7107142857142859
+  },
+  {
+    "left": {
+      "id": 5,
+      "entity": "DEMO ENTITY 05",
+      "zone": "TESTZONE-2",
+      "domain": "entity05.example.invalid"
+    },
+    "right": {
+      "id": 3,
+      "entity": "DEMO ENTTY 03",
+      "zone": "TESTZONE-0",
+      "domain": "entity03.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 5,
+      "entity": "DEMO ENTITY 05",
+      "zone": "TESTZONE-2",
+      "domain": "entity05.example.invalid"
+    },
+    "right": {
+      "id": 4,
+      "entity": "DEMO ENTITY 04",
+      "zone": "TESTZONE-1",
+      "domain": "entity04.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 5,
+      "entity": "DEMO ENTITY 05",
+      "zone": "TESTZONE-2",
+      "domain": "entity05.example.invalid"
+    },
+    "right": {
+      "id": 5,
+      "entity": "DEMO ENTITY 05",
+      "zone": "TESTZONE-2",
+      "domain": "changed.example.invalid"
+    },
+    "match": true,
+    "score": 0.75
+  },
+  {
+    "left": {
+      "id": 5,
+      "entity": "DEMO ENTITY 05",
+      "zone": "TESTZONE-2",
+      "domain": "entity05.example.invalid"
+    },
+    "right": {
+      "id": 6,
+      "entity": "DEMO ENTTY 06",
+      "zone": "TESTZONE-0",
+      "domain": "entity06.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 5,
+      "entity": "DEMO ENTITY 05",
+      "zone": "TESTZONE-2",
+      "domain": "entity05.example.invalid"
+    },
+    "right": {
+      "id": 7,
+      "entity": "DEMO ENTITY 07",
+      "zone": "TESTZONE-1",
+      "domain": "entity07.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 5,
+      "entity": "DEMO ENTITY 05",
+      "zone": "TESTZONE-2",
+      "domain": "entity05.example.invalid"
+    },
+    "right": {
+      "id": 8,
+      "entity": "DEMO ENTITY 08",
+      "zone": "TESTZONE-2",
+      "domain": "entity08.example.invalid"
+    },
+    "match": false,
+    "score": 0.7107142857142859
+  },
+  {
+    "left": {
+      "id": 5,
+      "entity": "DEMO ENTITY 05",
+      "zone": "TESTZONE-2",
+      "domain": "entity05.example.invalid"
+    },
+    "right": {
+      "id": 9,
+      "entity": "DEMO ENTTY 09",
+      "zone": "TESTZONE-0",
+      "domain": "entity09.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 5,
+      "entity": "DEMO ENTITY 05",
+      "zone": "TESTZONE-2",
+      "domain": "entity05.example.invalid"
+    },
+    "right": {
+      "id": 10,
+      "entity": "DEMO ENTITY 10",
+      "zone": "TESTZONE-1",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 5,
+      "entity": "DEMO ENTITY 05",
+      "zone": "TESTZONE-2",
+      "domain": "entity05.example.invalid"
+    },
+    "right": {
+      "id": 11,
+      "entity": "DEMO ENTITY 11",
+      "zone": "TESTZONE-2",
+      "domain": "entity11.example.invalid"
+    },
+    "match": false,
+    "score": 0.6714285714285715
+  },
+  {
+    "left": {
+      "id": 6,
+      "entity": "DEMO ENTITY 06",
+      "zone": "TESTZONE-0",
+      "domain": "entity06.example.invalid"
+    },
+    "right": {
+      "id": 0,
+      "entity": "DEMO ENTTY 00",
+      "zone": "TESTZONE-0",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.6888888888888889
+  },
+  {
+    "left": {
+      "id": 6,
+      "entity": "DEMO ENTITY 06",
+      "zone": "TESTZONE-0",
+      "domain": "entity06.example.invalid"
+    },
+    "right": {
+      "id": 1,
+      "entity": "DEMO ENTITY 01",
+      "zone": "TESTZONE-1",
+      "domain": "entity01.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 6,
+      "entity": "DEMO ENTITY 06",
+      "zone": "TESTZONE-0",
+      "domain": "entity06.example.invalid"
+    },
+    "right": {
+      "id": 2,
+      "entity": "DEMO ENTITY 02",
+      "zone": "TESTZONE-2",
+      "domain": "entity02.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 6,
+      "entity": "DEMO ENTITY 06",
+      "zone": "TESTZONE-0",
+      "domain": "entity06.example.invalid"
+    },
+    "right": {
+      "id": 3,
+      "entity": "DEMO ENTTY 03",
+      "zone": "TESTZONE-0",
+      "domain": "entity03.example.invalid"
+    },
+    "match": false,
+    "score": 0.6888888888888889
+  },
+  {
+    "left": {
+      "id": 6,
+      "entity": "DEMO ENTITY 06",
+      "zone": "TESTZONE-0",
+      "domain": "entity06.example.invalid"
+    },
+    "right": {
+      "id": 4,
+      "entity": "DEMO ENTITY 04",
+      "zone": "TESTZONE-1",
+      "domain": "entity04.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 6,
+      "entity": "DEMO ENTITY 06",
+      "zone": "TESTZONE-0",
+      "domain": "entity06.example.invalid"
+    },
+    "right": {
+      "id": 5,
+      "entity": "DEMO ENTITY 05",
+      "zone": "TESTZONE-2",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 6,
+      "entity": "DEMO ENTITY 06",
+      "zone": "TESTZONE-0",
+      "domain": "entity06.example.invalid"
+    },
+    "right": {
+      "id": 6,
+      "entity": "DEMO ENTTY 06",
+      "zone": "TESTZONE-0",
+      "domain": "entity06.example.invalid"
+    },
+    "match": true,
+    "score": 0.9796296296296296
+  },
+  {
+    "left": {
+      "id": 6,
+      "entity": "DEMO ENTITY 06",
+      "zone": "TESTZONE-0",
+      "domain": "entity06.example.invalid"
+    },
+    "right": {
+      "id": 7,
+      "entity": "DEMO ENTITY 07",
+      "zone": "TESTZONE-1",
+      "domain": "entity07.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 6,
+      "entity": "DEMO ENTITY 06",
+      "zone": "TESTZONE-0",
+      "domain": "entity06.example.invalid"
+    },
+    "right": {
+      "id": 8,
+      "entity": "DEMO ENTITY 08",
+      "zone": "TESTZONE-2",
+      "domain": "entity08.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 6,
+      "entity": "DEMO ENTITY 06",
+      "zone": "TESTZONE-0",
+      "domain": "entity06.example.invalid"
+    },
+    "right": {
+      "id": 9,
+      "entity": "DEMO ENTTY 09",
+      "zone": "TESTZONE-0",
+      "domain": "entity09.example.invalid"
+    },
+    "match": false,
+    "score": 0.6888888888888889
+  },
+  {
+    "left": {
+      "id": 6,
+      "entity": "DEMO ENTITY 06",
+      "zone": "TESTZONE-0",
+      "domain": "entity06.example.invalid"
+    },
+    "right": {
+      "id": 10,
+      "entity": "DEMO ENTITY 10",
+      "zone": "TESTZONE-1",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 6,
+      "entity": "DEMO ENTITY 06",
+      "zone": "TESTZONE-0",
+      "domain": "entity06.example.invalid"
+    },
+    "right": {
+      "id": 11,
+      "entity": "DEMO ENTITY 11",
+      "zone": "TESTZONE-2",
+      "domain": "entity11.example.invalid"
+    },
+    "match": false,
+    "score": 0.4714285714285714
+  },
+  {
+    "left": {
+      "id": 7,
+      "entity": "DEMO ENTITY 07",
+      "zone": "TESTZONE-1",
+      "domain": "entity07.example.invalid"
+    },
+    "right": {
+      "id": 0,
+      "entity": "DEMO ENTTY 00",
+      "zone": "TESTZONE-0",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 7,
+      "entity": "DEMO ENTITY 07",
+      "zone": "TESTZONE-1",
+      "domain": "entity07.example.invalid"
+    },
+    "right": {
+      "id": 1,
+      "entity": "DEMO ENTITY 01",
+      "zone": "TESTZONE-1",
+      "domain": "entity01.example.invalid"
+    },
+    "match": false,
+    "score": 0.7107142857142859
+  },
+  {
+    "left": {
+      "id": 7,
+      "entity": "DEMO ENTITY 07",
+      "zone": "TESTZONE-1",
+      "domain": "entity07.example.invalid"
+    },
+    "right": {
+      "id": 2,
+      "entity": "DEMO ENTITY 02",
+      "zone": "TESTZONE-2",
+      "domain": "entity02.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 7,
+      "entity": "DEMO ENTITY 07",
+      "zone": "TESTZONE-1",
+      "domain": "entity07.example.invalid"
+    },
+    "right": {
+      "id": 3,
+      "entity": "DEMO ENTTY 03",
+      "zone": "TESTZONE-0",
+      "domain": "entity03.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 7,
+      "entity": "DEMO ENTITY 07",
+      "zone": "TESTZONE-1",
+      "domain": "entity07.example.invalid"
+    },
+    "right": {
+      "id": 4,
+      "entity": "DEMO ENTITY 04",
+      "zone": "TESTZONE-1",
+      "domain": "entity04.example.invalid"
+    },
+    "match": false,
+    "score": 0.7107142857142859
+  },
+  {
+    "left": {
+      "id": 7,
+      "entity": "DEMO ENTITY 07",
+      "zone": "TESTZONE-1",
+      "domain": "entity07.example.invalid"
+    },
+    "right": {
+      "id": 5,
+      "entity": "DEMO ENTITY 05",
+      "zone": "TESTZONE-2",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 7,
+      "entity": "DEMO ENTITY 07",
+      "zone": "TESTZONE-1",
+      "domain": "entity07.example.invalid"
+    },
+    "right": {
+      "id": 6,
+      "entity": "DEMO ENTTY 06",
+      "zone": "TESTZONE-0",
+      "domain": "entity06.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 7,
+      "entity": "DEMO ENTITY 07",
+      "zone": "TESTZONE-1",
+      "domain": "entity07.example.invalid"
+    },
+    "right": {
+      "id": 7,
+      "entity": "DEMO ENTITY 07",
+      "zone": "TESTZONE-1",
+      "domain": "entity07.example.invalid"
+    },
+    "match": true,
+    "score": 1.0
+  },
+  {
+    "left": {
+      "id": 7,
+      "entity": "DEMO ENTITY 07",
+      "zone": "TESTZONE-1",
+      "domain": "entity07.example.invalid"
+    },
+    "right": {
+      "id": 8,
+      "entity": "DEMO ENTITY 08",
+      "zone": "TESTZONE-2",
+      "domain": "entity08.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 7,
+      "entity": "DEMO ENTITY 07",
+      "zone": "TESTZONE-1",
+      "domain": "entity07.example.invalid"
+    },
+    "right": {
+      "id": 9,
+      "entity": "DEMO ENTTY 09",
+      "zone": "TESTZONE-0",
+      "domain": "entity09.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 7,
+      "entity": "DEMO ENTITY 07",
+      "zone": "TESTZONE-1",
+      "domain": "entity07.example.invalid"
+    },
+    "right": {
+      "id": 10,
+      "entity": "DEMO ENTITY 10",
+      "zone": "TESTZONE-1",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.7107142857142859
+  },
+  {
+    "left": {
+      "id": 7,
+      "entity": "DEMO ENTITY 07",
+      "zone": "TESTZONE-1",
+      "domain": "entity07.example.invalid"
+    },
+    "right": {
+      "id": 11,
+      "entity": "DEMO ENTITY 11",
+      "zone": "TESTZONE-2",
+      "domain": "entity11.example.invalid"
+    },
+    "match": false,
+    "score": 0.4714285714285714
+  },
+  {
+    "left": {
+      "id": 8,
+      "entity": "DEMO ENTITY 08",
+      "zone": "TESTZONE-2",
+      "domain": "entity08.example.invalid"
+    },
+    "right": {
+      "id": 0,
+      "entity": "DEMO ENTTY 00",
+      "zone": "TESTZONE-0",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 8,
+      "entity": "DEMO ENTITY 08",
+      "zone": "TESTZONE-2",
+      "domain": "entity08.example.invalid"
+    },
+    "right": {
+      "id": 1,
+      "entity": "DEMO ENTITY 01",
+      "zone": "TESTZONE-1",
+      "domain": "entity01.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 8,
+      "entity": "DEMO ENTITY 08",
+      "zone": "TESTZONE-2",
+      "domain": "entity08.example.invalid"
+    },
+    "right": {
+      "id": 2,
+      "entity": "DEMO ENTITY 02",
+      "zone": "TESTZONE-2",
+      "domain": "entity02.example.invalid"
+    },
+    "match": false,
+    "score": 0.7107142857142859
+  },
+  {
+    "left": {
+      "id": 8,
+      "entity": "DEMO ENTITY 08",
+      "zone": "TESTZONE-2",
+      "domain": "entity08.example.invalid"
+    },
+    "right": {
+      "id": 3,
+      "entity": "DEMO ENTTY 03",
+      "zone": "TESTZONE-0",
+      "domain": "entity03.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 8,
+      "entity": "DEMO ENTITY 08",
+      "zone": "TESTZONE-2",
+      "domain": "entity08.example.invalid"
+    },
+    "right": {
+      "id": 4,
+      "entity": "DEMO ENTITY 04",
+      "zone": "TESTZONE-1",
+      "domain": "entity04.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 8,
+      "entity": "DEMO ENTITY 08",
+      "zone": "TESTZONE-2",
+      "domain": "entity08.example.invalid"
+    },
+    "right": {
+      "id": 5,
+      "entity": "DEMO ENTITY 05",
+      "zone": "TESTZONE-2",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.7107142857142859
+  },
+  {
+    "left": {
+      "id": 8,
+      "entity": "DEMO ENTITY 08",
+      "zone": "TESTZONE-2",
+      "domain": "entity08.example.invalid"
+    },
+    "right": {
+      "id": 6,
+      "entity": "DEMO ENTTY 06",
+      "zone": "TESTZONE-0",
+      "domain": "entity06.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 8,
+      "entity": "DEMO ENTITY 08",
+      "zone": "TESTZONE-2",
+      "domain": "entity08.example.invalid"
+    },
+    "right": {
+      "id": 7,
+      "entity": "DEMO ENTITY 07",
+      "zone": "TESTZONE-1",
+      "domain": "entity07.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 8,
+      "entity": "DEMO ENTITY 08",
+      "zone": "TESTZONE-2",
+      "domain": "entity08.example.invalid"
+    },
+    "right": {
+      "id": 8,
+      "entity": "DEMO ENTITY 08",
+      "zone": "TESTZONE-2",
+      "domain": "entity08.example.invalid"
+    },
+    "match": true,
+    "score": 1.0
+  },
+  {
+    "left": {
+      "id": 8,
+      "entity": "DEMO ENTITY 08",
+      "zone": "TESTZONE-2",
+      "domain": "entity08.example.invalid"
+    },
+    "right": {
+      "id": 9,
+      "entity": "DEMO ENTTY 09",
+      "zone": "TESTZONE-0",
+      "domain": "entity09.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 8,
+      "entity": "DEMO ENTITY 08",
+      "zone": "TESTZONE-2",
+      "domain": "entity08.example.invalid"
+    },
+    "right": {
+      "id": 10,
+      "entity": "DEMO ENTITY 10",
+      "zone": "TESTZONE-1",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 8,
+      "entity": "DEMO ENTITY 08",
+      "zone": "TESTZONE-2",
+      "domain": "entity08.example.invalid"
+    },
+    "right": {
+      "id": 11,
+      "entity": "DEMO ENTITY 11",
+      "zone": "TESTZONE-2",
+      "domain": "entity11.example.invalid"
+    },
+    "match": false,
+    "score": 0.6714285714285715
+  },
+  {
+    "left": {
+      "id": 9,
+      "entity": "DEMO ENTITY 09",
+      "zone": "TESTZONE-0",
+      "domain": "entity09.example.invalid"
+    },
+    "right": {
+      "id": 0,
+      "entity": "DEMO ENTTY 00",
+      "zone": "TESTZONE-0",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.6888888888888889
+  },
+  {
+    "left": {
+      "id": 9,
+      "entity": "DEMO ENTITY 09",
+      "zone": "TESTZONE-0",
+      "domain": "entity09.example.invalid"
+    },
+    "right": {
+      "id": 1,
+      "entity": "DEMO ENTITY 01",
+      "zone": "TESTZONE-1",
+      "domain": "entity01.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 9,
+      "entity": "DEMO ENTITY 09",
+      "zone": "TESTZONE-0",
+      "domain": "entity09.example.invalid"
+    },
+    "right": {
+      "id": 2,
+      "entity": "DEMO ENTITY 02",
+      "zone": "TESTZONE-2",
+      "domain": "entity02.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 9,
+      "entity": "DEMO ENTITY 09",
+      "zone": "TESTZONE-0",
+      "domain": "entity09.example.invalid"
+    },
+    "right": {
+      "id": 3,
+      "entity": "DEMO ENTTY 03",
+      "zone": "TESTZONE-0",
+      "domain": "entity03.example.invalid"
+    },
+    "match": false,
+    "score": 0.6888888888888889
+  },
+  {
+    "left": {
+      "id": 9,
+      "entity": "DEMO ENTITY 09",
+      "zone": "TESTZONE-0",
+      "domain": "entity09.example.invalid"
+    },
+    "right": {
+      "id": 4,
+      "entity": "DEMO ENTITY 04",
+      "zone": "TESTZONE-1",
+      "domain": "entity04.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 9,
+      "entity": "DEMO ENTITY 09",
+      "zone": "TESTZONE-0",
+      "domain": "entity09.example.invalid"
+    },
+    "right": {
+      "id": 5,
+      "entity": "DEMO ENTITY 05",
+      "zone": "TESTZONE-2",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 9,
+      "entity": "DEMO ENTITY 09",
+      "zone": "TESTZONE-0",
+      "domain": "entity09.example.invalid"
+    },
+    "right": {
+      "id": 6,
+      "entity": "DEMO ENTTY 06",
+      "zone": "TESTZONE-0",
+      "domain": "entity06.example.invalid"
+    },
+    "match": false,
+    "score": 0.6888888888888889
+  },
+  {
+    "left": {
+      "id": 9,
+      "entity": "DEMO ENTITY 09",
+      "zone": "TESTZONE-0",
+      "domain": "entity09.example.invalid"
+    },
+    "right": {
+      "id": 7,
+      "entity": "DEMO ENTITY 07",
+      "zone": "TESTZONE-1",
+      "domain": "entity07.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 9,
+      "entity": "DEMO ENTITY 09",
+      "zone": "TESTZONE-0",
+      "domain": "entity09.example.invalid"
+    },
+    "right": {
+      "id": 8,
+      "entity": "DEMO ENTITY 08",
+      "zone": "TESTZONE-2",
+      "domain": "entity08.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 9,
+      "entity": "DEMO ENTITY 09",
+      "zone": "TESTZONE-0",
+      "domain": "entity09.example.invalid"
+    },
+    "right": {
+      "id": 9,
+      "entity": "DEMO ENTTY 09",
+      "zone": "TESTZONE-0",
+      "domain": "entity09.example.invalid"
+    },
+    "match": true,
+    "score": 0.9796296296296296
+  },
+  {
+    "left": {
+      "id": 9,
+      "entity": "DEMO ENTITY 09",
+      "zone": "TESTZONE-0",
+      "domain": "entity09.example.invalid"
+    },
+    "right": {
+      "id": 10,
+      "entity": "DEMO ENTITY 10",
+      "zone": "TESTZONE-1",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 9,
+      "entity": "DEMO ENTITY 09",
+      "zone": "TESTZONE-0",
+      "domain": "entity09.example.invalid"
+    },
+    "right": {
+      "id": 11,
+      "entity": "DEMO ENTITY 11",
+      "zone": "TESTZONE-2",
+      "domain": "entity11.example.invalid"
+    },
+    "match": false,
+    "score": 0.4714285714285714
+  },
+  {
+    "left": {
+      "id": 10,
+      "entity": "DEMO ENTITY 10",
+      "zone": "TESTZONE-1",
+      "domain": "entity10.example.invalid"
+    },
+    "right": {
+      "id": 0,
+      "entity": "DEMO ENTTY 00",
+      "zone": "TESTZONE-0",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 10,
+      "entity": "DEMO ENTITY 10",
+      "zone": "TESTZONE-1",
+      "domain": "entity10.example.invalid"
+    },
+    "right": {
+      "id": 1,
+      "entity": "DEMO ENTITY 01",
+      "zone": "TESTZONE-1",
+      "domain": "entity01.example.invalid"
+    },
+    "match": false,
+    "score": 0.7107142857142859
+  },
+  {
+    "left": {
+      "id": 10,
+      "entity": "DEMO ENTITY 10",
+      "zone": "TESTZONE-1",
+      "domain": "entity10.example.invalid"
+    },
+    "right": {
+      "id": 2,
+      "entity": "DEMO ENTITY 02",
+      "zone": "TESTZONE-2",
+      "domain": "entity02.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 10,
+      "entity": "DEMO ENTITY 10",
+      "zone": "TESTZONE-1",
+      "domain": "entity10.example.invalid"
+    },
+    "right": {
+      "id": 3,
+      "entity": "DEMO ENTTY 03",
+      "zone": "TESTZONE-0",
+      "domain": "entity03.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 10,
+      "entity": "DEMO ENTITY 10",
+      "zone": "TESTZONE-1",
+      "domain": "entity10.example.invalid"
+    },
+    "right": {
+      "id": 4,
+      "entity": "DEMO ENTITY 04",
+      "zone": "TESTZONE-1",
+      "domain": "entity04.example.invalid"
+    },
+    "match": false,
+    "score": 0.7107142857142859
+  },
+  {
+    "left": {
+      "id": 10,
+      "entity": "DEMO ENTITY 10",
+      "zone": "TESTZONE-1",
+      "domain": "entity10.example.invalid"
+    },
+    "right": {
+      "id": 5,
+      "entity": "DEMO ENTITY 05",
+      "zone": "TESTZONE-2",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 10,
+      "entity": "DEMO ENTITY 10",
+      "zone": "TESTZONE-1",
+      "domain": "entity10.example.invalid"
+    },
+    "right": {
+      "id": 6,
+      "entity": "DEMO ENTTY 06",
+      "zone": "TESTZONE-0",
+      "domain": "entity06.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 10,
+      "entity": "DEMO ENTITY 10",
+      "zone": "TESTZONE-1",
+      "domain": "entity10.example.invalid"
+    },
+    "right": {
+      "id": 7,
+      "entity": "DEMO ENTITY 07",
+      "zone": "TESTZONE-1",
+      "domain": "entity07.example.invalid"
+    },
+    "match": false,
+    "score": 0.7107142857142859
+  },
+  {
+    "left": {
+      "id": 10,
+      "entity": "DEMO ENTITY 10",
+      "zone": "TESTZONE-1",
+      "domain": "entity10.example.invalid"
+    },
+    "right": {
+      "id": 8,
+      "entity": "DEMO ENTITY 08",
+      "zone": "TESTZONE-2",
+      "domain": "entity08.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 10,
+      "entity": "DEMO ENTITY 10",
+      "zone": "TESTZONE-1",
+      "domain": "entity10.example.invalid"
+    },
+    "right": {
+      "id": 9,
+      "entity": "DEMO ENTTY 09",
+      "zone": "TESTZONE-0",
+      "domain": "entity09.example.invalid"
+    },
+    "match": false,
+    "score": 0.48888888888888893
+  },
+  {
+    "left": {
+      "id": 10,
+      "entity": "DEMO ENTITY 10",
+      "zone": "TESTZONE-1",
+      "domain": "entity10.example.invalid"
+    },
+    "right": {
+      "id": 10,
+      "entity": "DEMO ENTITY 10",
+      "zone": "TESTZONE-1",
+      "domain": "changed.example.invalid"
+    },
+    "match": true,
+    "score": 0.75
+  },
+  {
+    "left": {
+      "id": 10,
+      "entity": "DEMO ENTITY 10",
+      "zone": "TESTZONE-1",
+      "domain": "entity10.example.invalid"
+    },
+    "right": {
+      "id": 11,
+      "entity": "DEMO ENTITY 11",
+      "zone": "TESTZONE-2",
+      "domain": "entity11.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 11,
+      "entity": "DEMO ENTITY 11",
+      "zone": "TESTZONE-2",
+      "domain": "entity11.example.invalid"
+    },
+    "right": {
+      "id": 0,
+      "entity": "DEMO ENTTY 00",
+      "zone": "TESTZONE-0",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.4481481481481482
+  },
+  {
+    "left": {
+      "id": 11,
+      "entity": "DEMO ENTITY 11",
+      "zone": "TESTZONE-2",
+      "domain": "entity11.example.invalid"
+    },
+    "right": {
+      "id": 1,
+      "entity": "DEMO ENTITY 01",
+      "zone": "TESTZONE-1",
+      "domain": "entity01.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 11,
+      "entity": "DEMO ENTITY 11",
+      "zone": "TESTZONE-2",
+      "domain": "entity11.example.invalid"
+    },
+    "right": {
+      "id": 2,
+      "entity": "DEMO ENTITY 02",
+      "zone": "TESTZONE-2",
+      "domain": "entity02.example.invalid"
+    },
+    "match": false,
+    "score": 0.6714285714285715
+  },
+  {
+    "left": {
+      "id": 11,
+      "entity": "DEMO ENTITY 11",
+      "zone": "TESTZONE-2",
+      "domain": "entity11.example.invalid"
+    },
+    "right": {
+      "id": 3,
+      "entity": "DEMO ENTTY 03",
+      "zone": "TESTZONE-0",
+      "domain": "entity03.example.invalid"
+    },
+    "match": false,
+    "score": 0.4481481481481482
+  },
+  {
+    "left": {
+      "id": 11,
+      "entity": "DEMO ENTITY 11",
+      "zone": "TESTZONE-2",
+      "domain": "entity11.example.invalid"
+    },
+    "right": {
+      "id": 4,
+      "entity": "DEMO ENTITY 04",
+      "zone": "TESTZONE-1",
+      "domain": "entity04.example.invalid"
+    },
+    "match": false,
+    "score": 0.4714285714285714
+  },
+  {
+    "left": {
+      "id": 11,
+      "entity": "DEMO ENTITY 11",
+      "zone": "TESTZONE-2",
+      "domain": "entity11.example.invalid"
+    },
+    "right": {
+      "id": 5,
+      "entity": "DEMO ENTITY 05",
+      "zone": "TESTZONE-2",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.6714285714285715
+  },
+  {
+    "left": {
+      "id": 11,
+      "entity": "DEMO ENTITY 11",
+      "zone": "TESTZONE-2",
+      "domain": "entity11.example.invalid"
+    },
+    "right": {
+      "id": 6,
+      "entity": "DEMO ENTTY 06",
+      "zone": "TESTZONE-0",
+      "domain": "entity06.example.invalid"
+    },
+    "match": false,
+    "score": 0.4481481481481482
+  },
+  {
+    "left": {
+      "id": 11,
+      "entity": "DEMO ENTITY 11",
+      "zone": "TESTZONE-2",
+      "domain": "entity11.example.invalid"
+    },
+    "right": {
+      "id": 7,
+      "entity": "DEMO ENTITY 07",
+      "zone": "TESTZONE-1",
+      "domain": "entity07.example.invalid"
+    },
+    "match": false,
+    "score": 0.4714285714285714
+  },
+  {
+    "left": {
+      "id": 11,
+      "entity": "DEMO ENTITY 11",
+      "zone": "TESTZONE-2",
+      "domain": "entity11.example.invalid"
+    },
+    "right": {
+      "id": 8,
+      "entity": "DEMO ENTITY 08",
+      "zone": "TESTZONE-2",
+      "domain": "entity08.example.invalid"
+    },
+    "match": false,
+    "score": 0.6714285714285715
+  },
+  {
+    "left": {
+      "id": 11,
+      "entity": "DEMO ENTITY 11",
+      "zone": "TESTZONE-2",
+      "domain": "entity11.example.invalid"
+    },
+    "right": {
+      "id": 9,
+      "entity": "DEMO ENTTY 09",
+      "zone": "TESTZONE-0",
+      "domain": "entity09.example.invalid"
+    },
+    "match": false,
+    "score": 0.4481481481481482
+  },
+  {
+    "left": {
+      "id": 11,
+      "entity": "DEMO ENTITY 11",
+      "zone": "TESTZONE-2",
+      "domain": "entity11.example.invalid"
+    },
+    "right": {
+      "id": 10,
+      "entity": "DEMO ENTITY 10",
+      "zone": "TESTZONE-1",
+      "domain": "changed.example.invalid"
+    },
+    "match": false,
+    "score": 0.5107142857142858
+  },
+  {
+    "left": {
+      "id": 11,
+      "entity": "DEMO ENTITY 11",
+      "zone": "TESTZONE-2",
+      "domain": "entity11.example.invalid"
+    },
+    "right": {
+      "id": 11,
+      "entity": "DEMO ENTITY 11",
+      "zone": "TESTZONE-2",
+      "domain": "entity11.example.invalid"
+    },
+    "match": true,
+    "score": 1.0
+  }
+]

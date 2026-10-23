@@ -1,0 +1,50 @@
+{
+  "schema_valid": true,
+  "source_sha256": "043d2cbbb1717022c5b4cd91a626507bf87e7852ab2df9e83dda850c04555141",
+  "automatic_approval": false,
+  "fields": {
+    "document_id": {
+      "value": "",
+      "supported": false,
+      "start": null,
+      "end": null
+    },
+    "date": {
+      "value": "2026-02-02",
+      "supported": true,
+      "start": 79,
+      "end": 89
+    },
+    "amount": {
+      "value": "",
+      "supported": false,
+      "start": null,
+      "end": null
+    },
+    "entity": {
+      "value": "",
+      "supported": false,
+      "start": null,
+      "end": null
+    },
+    "reference": {
+      "value": "",
+      "supported": false,
+      "start": null,
+      "end": null
+    },
+    "zone": {
+      "value": "",
+      "supported": false,
+      "start": null,
+      "end": null
+    },
+    "domain": {
+      "value": "",
+      "supported": false,
+      "start": null,
+      "end": null
+    }
+  },
+  "seconds": 5.75699175009504
+}

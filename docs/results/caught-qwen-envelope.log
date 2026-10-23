@@ -1,0 +1,24 @@
+W1023 16:01:47.236000 6878 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 12369.31it/s]
+doc-0000 False 0
+doc-0001 False 0
+doc-0002 False 0
+doc-0018 False 0
+doc-0030 False 0
+doc-0035 False 0
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "torch": "2.14.1",
+  "transformers": "5.20.2",
+  "documents": 6,
+  "schema_valid_documents": 0,
+  "correct_fields": 0,
+  "total_fields": 42,
+  "proposed_nonempty_fields": 0,
+  "unsupported_fields": 0,
+  "unsupported_rate": null,
+  "accepted_unsupported_fields": 0,
+  "seconds": 25.970424958737567,
+  "scope": "unconstrained greedy generation; unsupported proposals rejected; schema failures separate; no automatic approval or clinical factuality claim"
+}

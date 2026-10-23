@@ -1,0 +1,14 @@
+# Prepared only; requires an explicitly supplied database and private credentials.
+services:
+  - type: web
+    name: docket-review
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: DOCKET_REVIEW_TOKEN
+        generateValue: true
+      - key: DOCKET_VIEW_TOKEN
+        generateValue: true

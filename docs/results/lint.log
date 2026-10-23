@@ -1,0 +1,11 @@
+.venv/bin/ruff check src scripts tests
+All checks passed!
+.venv/bin/ruff format --check src scripts tests
+18 files already formatted
+npm run lint --prefix apps/web
+
+> docket-reading-room@0.1.0 lint
+> tsc --noEmit && prettier --check src index.html package.json tsconfig.json
+
+Checking formatting...
+All matched files use Prettier code style!

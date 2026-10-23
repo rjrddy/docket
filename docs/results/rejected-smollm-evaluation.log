@@ -1,0 +1,24 @@
+W1023 15:59:52.902000 6456 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 6125.54it/s]
+doc-0000 False 0
+doc-0001 False 0
+doc-0002 False 0
+doc-0018 False 0
+doc-0030 False 0
+doc-0035 False 0
+{
+  "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+  "torch": "2.14.1",
+  "transformers": "5.20.2",
+  "documents": 6,
+  "schema_valid_documents": 0,
+  "correct_fields": 0,
+  "total_fields": 42,
+  "proposed_nonempty_fields": 0,
+  "unsupported_fields": 0,
+  "unsupported_rate": null,
+  "accepted_unsupported_fields": 0,
+  "seconds": 19.64058566582389,
+  "scope": "unconstrained greedy generation; unsupported proposals rejected; schema failures separate; no automatic approval or clinical factuality claim"
+}

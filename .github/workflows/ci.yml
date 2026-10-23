@@ -1,0 +1,39 @@
+name: Docket gates
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    services:
+      postgres:
+        image: postgres:17-bookworm
+        env:
+          POSTGRES_DB: docket
+          POSTGRES_PASSWORD: synthetic-local-db-password
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U postgres -d docket"
+          --health-interval 2s --health-timeout 3s --health-retries 30
+    env:
+      DATABASE_URL: postgresql://postgres:synthetic-local-db-password@127.0.0.1:5432/docket
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: sudo apt-get update && sudo apt-get install -y tesseract-ocr tesseract-ocr-eng
+      - run: make setup build lint test bench scan
+      - run: docker build -t docket:test .
+      - run: PYTHONPATH=src .venv/bin/python scripts/container_smoke.py
+      - run: .venv/bin/pip install -r requirements-browser.txt
+      - run: .venv/bin/python -m playwright install --with-deps chromium ffmpeg
+      - run: .venv/bin/python scripts/local.py review
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: docket-runtime-evidence
+          path: docs/results/

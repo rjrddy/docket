@@ -1,0 +1,4 @@
+.venv/bin/python -m pip_audit -r requirements-dev.txt -r requirements-browser.txt --progress-spinner off
+No known vulnerabilities found
+npm audit --prefix apps/web --audit-level=low
+found 0 vulnerabilities
