@@ -73,7 +73,7 @@ def main() -> None:
                     headers={"Authorization": "Bearer local-review"},
                 )
                 with urllib.request.urlopen(req) as response:
-                    assert hashlib.sha256(response.read()).hexdigest() == row["source_sha256"]
+                    assert hashlib.sha256(response.read()).hexdigest() == row["sha"]
                 tracked = subprocess.check_output(
                     [
                         "git",
@@ -108,7 +108,7 @@ def main() -> None:
                             "live_document": {
                                 "id": row["id"],
                                 "state": row["state"],
-                                "source_sha256": row["source_sha256"],
+                                "source_sha256": row["sha"],
                             },
                             "source_image_sha_verified": True,
                             "source_manifest": manifest,
