@@ -1,0 +1,51 @@
+{"event": "ready", "status": "http://127.0.0.1:18103"}
+{"event": "http", "status": "200"}
+{"document": "doc-0001", "event": "extraction", "status": "published"}
+{"document": "doc-0000", "event": "extraction", "status": "published"}
+{"document": "doc-0002", "event": "extraction", "status": "published"}
+{"event": "http", "status": "200"}
+{"document": "doc-0003", "event": "extraction", "status": "published"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "404"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"document": "doc-0004", "event": "extraction", "status": "published"}
+{"document": "doc-0005", "event": "extraction", "status": "published"}
+{"document": "doc-0006", "event": "extraction", "status": "published"}
+{"document": "doc-0007", "event": "extraction", "status": "published"}
+{"event": "http", "status": "200"}
+{"document": "doc-0008", "event": "extraction", "status": "published"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"document": "doc-0009", "event": "extraction", "status": "published"}
+{"document": "doc-0010", "event": "extraction", "status": "published"}
+{"document": "doc-0011", "event": "extraction", "status": "published"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "409"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "401"}
+{"event": "http", "status": "401"}
+{"event": "http", "status": "401"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}
+{"event": "http", "status": "200"}

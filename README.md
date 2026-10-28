@@ -39,6 +39,9 @@ make lint test bench
 
 ## Decisions and limits
 
+Contextual motion uses finite transform-only responses to real controls and changed evidence, with live reduced-motion cancellation. See [motion design and validation](docs/MOTION.md); frame rate is not measured.
+
+
 - Synthetic PNG ingestion only. Six generator templates with rendered degradation, not real-world document validation. Each field needs a unique labeled OCR span. OCR citations can support an OCR error; image-attested human corrections have a separate evidence class. [Design](docs/DESIGN.md), [ADRs](docs/adr/).
 - At the fixed default threshold 0.93, **0/36** evaluated pages auto-route. This conservative default remains unchanged; no calibrated safe-automation claim is made. The full automation/error curve retains lower-threshold fixture results and null rates when nothing is approved.
 - Optional LLM generation is real, local and hash-pinned. Its extraction quality is limited; invalid schemas and unsupported fields are rejected, not replaced with fabricated output. The smaller model's complete schema failure and Qwen's envelope-format failure are retained. The model never approves cases or replaces reviewer decisions.

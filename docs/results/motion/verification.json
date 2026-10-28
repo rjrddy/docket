@@ -1,0 +1,17 @@
+{
+  "project": "docket",
+  "motion_profile": "Citation carriage return",
+  "source_sha256": {
+    "apps/web/src/motion.ts": "dc7333fba754c21ccbfa124c54496b76e998da3c7b8649ab074b3ef971ef4dfe",
+    "apps/web/src/style.css": "fe71579a3d85b90d9d80753aba7869780577c3234c4d63e912fc598b12bde622"
+  },
+  "frontend_build_lint": "passed",
+  "motion_contract": "passed",
+  "built_page_smoke": "passed",
+  "live_backend_browser": "passed",
+  "showcase_contract": "not applicable",
+  "compositor_properties_only": true,
+  "live_reduced_motion_cancellation": true,
+  "fps": "not measured",
+  "new_dependencies": 0
+}

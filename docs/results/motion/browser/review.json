@@ -1,0 +1,46 @@
+{
+  "elapsed_seconds": 4.586742624989711,
+  "page_errors": [],
+  "receipts": [
+    {
+      "kind": "unsupported-negation-rejected"
+    },
+    {
+      "kind": "scripted-truth-assisted-review",
+      "id": "doc-0002",
+      "revision": 2,
+      "image_attested": true
+    },
+    {
+      "kind": "stale-review-rejected",
+      "status": 409
+    },
+    {
+      "kind": "mock-payer-ambiguous-timeout-reconciled"
+    },
+    {
+      "kind": "viewer-redacted-no-write"
+    },
+    {
+      "kind": "responsive",
+      "width": 390,
+      "no_overflow": true
+    },
+    {
+      "kind": "responsive",
+      "width": 768,
+      "no_overflow": true
+    },
+    {
+      "kind": "responsive",
+      "width": 1024,
+      "no_overflow": true
+    },
+    {
+      "kind": "responsive",
+      "width": 1600,
+      "no_overflow": true
+    }
+  ],
+  "review_scope": "scripted truth-assisted form operations, not independent human benefit"
+}

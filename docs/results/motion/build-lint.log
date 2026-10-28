@@ -1,0 +1,22 @@
+src/motion.ts 60ms
+src/main.tsx 82ms (unchanged)
+src/style.css 67ms (unchanged)
+
+> docket-reading-room@0.1.0 lint
+> tsc --noEmit && prettier --check src index.html package.json tsconfig.json
+
+Checking formatting...
+All matched files use Prettier code style!
+
+> docket-reading-room@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 29 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.63 kB │ gzip:  0.38 kB
+dist/assets/index-byPkoPX0.css   20.25 kB │ gzip:  5.19 kB
+dist/assets/index-mqWRF7Q2.js   218.53 kB │ gzip: 68.71 kB
+✓ built in 615ms
