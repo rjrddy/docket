@@ -2,7 +2,7 @@
   "project": "docket",
   "motion_profile": "Citation carriage return",
   "source_sha256": {
-    "apps/web/src/motion.ts": "dc7333fba754c21ccbfa124c54496b76e998da3c7b8649ab074b3ef971ef4dfe",
+    "apps/web/src/motion.ts": "17d72e12d4fc1ed0830fc891dc895ba8a9f4ed200eff7d7af0393d8e4ef17e1b",
     "apps/web/src/style.css": "fe71579a3d85b90d9d80753aba7869780577c3234c4d63e912fc598b12bde622"
   },
   "frontend_build_lint": "passed",

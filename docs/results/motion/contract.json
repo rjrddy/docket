@@ -26,7 +26,7 @@
         "iterations": 1,
         "fill": "none"
       },
-      "at": 95
+      "at": 110
     },
     {
       "tag": "DIV",
@@ -46,7 +46,7 @@
         "iterations": 1,
         "fill": "none"
       },
-      "at": 136.80000007152557
+      "at": 148.39999997615814
     },
     {
       "tag": "CODE",
@@ -66,7 +66,7 @@
         "iterations": 1,
         "fill": "none"
       },
-      "at": 136.89999997615814
+      "at": 148.5
     },
     {
       "tag": "CODE",
@@ -90,13 +90,14 @@
         "iterations": 1,
         "fill": "none"
       },
-      "at": 136.89999997615814
+      "at": 148.5
     }
   ],
   "transformOpacityOnly": true,
   "zeroDelay": true,
   "immediatePointerAndKeyboard": true,
   "edgeClickTargetStableUntilActivation": true,
+  "immediateNeighborsOnly": true,
   "disabledAndEditorExcluded": true,
   "liveReducedMotionCancellation": true,
   "reEnable": true,

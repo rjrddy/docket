@@ -21,3 +21,5 @@ The existing real-service browser workflow was also rerun; see `docs/results/mot
 The browser harness initially passed a macOS `/tmp` symlink to the OCR tool; canonical temporary paths fixed the harness without changing application code. The original failure is retained in `caught-ocr-fixture-path.log`.
 
 Button feedback begins when click targeting is committed, so the first press does not shrink a hitbox underneath the pointer. Editable/dragging surfaces are excluded. Backend APIs, ranking/math policies, measurements, and document source data were not changed.
+
+Connected controls recoil only with their immediate previous/next matching siblings. The left sibling moves left, the right moves right; distant controls do not react. The runtime reads sibling references, not geometry.

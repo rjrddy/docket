@@ -1,6 +1,6 @@
-src/motion.ts 60ms
-src/main.tsx 82ms (unchanged)
-src/style.css 67ms (unchanged)
+src/motion.ts 65ms
+src/main.tsx 86ms (unchanged)
+src/style.css 65ms (unchanged)
 
 > docket-reading-room@0.1.0 lint
 > tsc --noEmit && prettier --check src index.html package.json tsconfig.json
@@ -16,7 +16,7 @@ transforming...
 ✓ 29 modules transformed.
 rendering chunks...
 computing gzip size...
-dist/index.html                   0.63 kB │ gzip:  0.38 kB
+dist/index.html                   0.63 kB │ gzip:  0.37 kB
 dist/assets/index-byPkoPX0.css   20.25 kB │ gzip:  5.19 kB
-dist/assets/index-mqWRF7Q2.js   218.53 kB │ gzip: 68.71 kB
-✓ built in 615ms
+dist/assets/index-CtCp1h0-.js   218.54 kB │ gzip: 68.73 kB
+✓ built in 518ms
